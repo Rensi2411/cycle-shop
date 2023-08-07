@@ -1,0 +1,119 @@
+#registration {
+    width: 100%;
+    height: 1000px;
+    border: 1px dashed red;
+    background-color: #464445;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  #regi_child{
+      width: 25%;   
+  }
+  #regi_child h3 {
+    width: 100%;
+    font-size: 36px;
+    font-weight: 400;
+    font-family: DIN W01 Medium, sans-serif;
+    color: white;
+  }
+  .input_ele {
+    font-family: DIN W01 Regular,sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    height: 48px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 0px 20px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(37, 37, 37);
+  }
+  span, a{
+    font-family: "DIN W01 Regular";
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 300;
+    color: rgb(245, 240, 240);
+    cursor: pointer;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+  }
+  span{
+    margin: 0px 0px 0px 35px;
+  }
+  .chkbox{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    width: 20px;
+    height: 20px;
+  }
+  .checkbox_div{
+    width: 111%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    /*border: 1px solid red;  */    
+  }
+  .policy{
+    font-family: "DIN W01 Regular";
+    color: rgb(245, 240, 240);
+    
+  }
+  #regi_child button{
+    width: 112%;
+    border-style: solid;
+    cursor: pointer;
+    display: block;
+    font-family: "DIN W01 Medium";
+    line-height: inherit;
+    padding: 0px 16px;
+    position: relative;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: inherit;
+    min-height: 48px;
+    background: rgb(37, 37, 37);
+    border-color: rgb(37, 37, 37);
+    color: rgb(255, 255, 255);
+  }
+  .login_nav{
+    display: flex;
+    justify-content: space-evenly;
+    width: 112%;
+  }
+  .login_nav p{
+    font-size: 16px;
+    line-height: 19px;
+    font-family: "DIN W01 Regular";
+    font-weight: 300;
+  }
+
+  @media only screen and (max-width: 631px) {
+    #registration{
+      width: 100%;
+      height: 1500px;
+      display: flex;
+      justify-content: center;
+    }
+
+    #regi_child{
+      width: 25%;  
+      display: block;
+    }
+    
+    .input_ele{
+      height: 48px;
+      width: 100%;
+   }
+
+    span, a{
+      margin: 0px 0px 0px 0px; 
+      padding: 0px 0px 0px 18px;
+   }
+   .btn{
+      height: 48px;
+      width: 112%;
+   }
+  }

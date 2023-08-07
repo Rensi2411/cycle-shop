@@ -4,8 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LogIn</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        @media only screen and (max-width: 631px) {
+            .checkbox_div{
+                width: 100%;            
+                display: block;              
+            }
+        }
+    </style>
 </head>
 <body>
-    
+    <div id="registration">
+        <div id="regi_child">
+  
+             <h3>Sign in to your Account</h3>
+             <input type="email" class="input_ele" placeholder="Email" />
+             <br/>
+             <br/>
+             <br/>
+             <input type="password" class="input_ele" placeholder="Password" />
+             <br/>
+             <br/>
+             <br/>
+             <div class="checkbox_div">
+                  <div>
+                    <input type="checkbox" class="chkbox">
+                    <span>Remember Me</span>
+                  </div>
+                  <br/>
+                  <div>
+                     <a>Forgot your password?</a>
+                  </div>
+             </div>
+             <br/>
+             <div class="policy">I accept the Specialized <a href="/sg/en/terms-of-use" target="_blank">Terms of Use</a> and acknowledge Specialized will use my information in accordance with its <a href="/sg/en/privacy-policy" target="_blank">Privacy Policy</a>.</div>
+             <br/>
+             <br/>  
+             <button class="btn">Sign In</button>
+             <br/>
+             <div class="login_nav">
+                   <a href="./signup.html">Create Account</a>      
+             </div>
+        </div>
+      </div>
 </body>
 </html>
