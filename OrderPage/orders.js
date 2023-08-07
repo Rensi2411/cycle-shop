@@ -30,7 +30,7 @@ function displayOrders(orderItems) {
     let card_div = document.createElement("div");
 
     let left_div = document.createElement("div");
-
+    left_div.className= "left_div"
     let orderimg = document.createElement("img");
     orderimg.src = order.image;
 
@@ -57,7 +57,8 @@ function displayOrders(orderItems) {
     let quan = 1;
 
     let quantitiy_p = document.createElement("p");
-    quantitiy_p.textContent = `${quan}`;
+    quantitiy_p.textContent = `${Number(quan)}`;
+  
 
     let spaninc = document.createElement("span");
     spaninc.textContent = "+";
@@ -66,7 +67,7 @@ function displayOrders(orderItems) {
 
     let totalOrderPrice = document.createElement("p");
 
-    totalOrderPrice.textContent = `$ ${quan * price}`;
+    totalOrderPrice.textContent = `$ ${quan*order.price}`;
 
     let DelIcon = document.createElement("i");
     DelIcon.setAttribute("class","fa-regular fa-trash-can")
