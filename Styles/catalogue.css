@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #464445;
+}
+
+body>p{
+    color: white;
+    margin-left: 2.8%;
+    letter-spacing: 1.8px;
+    font-size: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#catalogue {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+    grid-gap: 30px;
+    margin-bottom: 60px;
+}
+
+@media screen and (max-width : 370px) {
+    #catalogue{
+        grid-template-columns: repeat(1,1fr);
+    }
+    body>p{
+        font-size: 20px;
+    }
+
+}
+
+.mountain, .road , .active, .kids, .electric{
+    background-color: #464445;
+    border-radius: 7px;
+    
+    cursor: pointer;
+    /* margin-top: 17px;
+    margin-bottom: 17px; */
+    
+    
+}
+
+.mountain img, .road img, .active img, .kids img, .electric img{
+    width: 100%;
+    box-shadow: rgba(208, 13, 52, 0.1) 7px 8px 24px, rgba(178, 220, 9, 0.1) 7px 16px 56px, rgba(232, 176, 9, 0.1) 7px 24px 80px;
+}
+
+
+

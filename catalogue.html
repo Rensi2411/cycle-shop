@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Styles/catalogue.css">
+
+</head>
+<body>
+    
+
+    <p>CATALOGUE SPECIALIZED </p>
+
+    <div id="catalogue">
+
+        <div class="mountain" >
+            <img src="./Images/mountain.png" alt="Mountain">
+            
+        </div>
+
+        <div class="road">
+            <img src="./Images/road.png" alt="Road">
+            
+        </div>
+
+        <div class="active">
+            <img src="./Images/active.png" alt="active">
+        </div>
+
+        <div class="electric">
+            <img src="./Images/electric.png" alt="electric">
+            
+        </div>
+
+        <div class="kids">
+            <img src="./Images/kids.png" alt="Kids">
+            
+        </div>
+    </div>
+
+</body>
+</html>
+
+<script type="module">
+
+    let mountain = document.querySelector(".mountain");
+    let road = document.querySelector(".road");
+    let active = document.querySelector(".active");
+    let electric = document.querySelector(".electric")
+    let kids = document.querySelector(".kids")
+
+
+
+    mountain.addEventListener("click", () =>{
+        window.location.href = "./mountain.html"
+    })  
+
+    road.addEventListener("click", () =>{
+        window.location.href = "./road.html"
+    })
+
+    active.addEventListener("click" , () =>{
+        window.location.href = "./active.html"
+    })
+
+    electric.addEventListener("click", () =>{
+        window.location.href = "./electric.html"
+    })
+
+    kids.addEventListener("click", () =>{
+        window.location.href = "./kids.html"
+    })
+
+
+</script>
