@@ -4,6 +4,31 @@ const orderItems = [
       "https://d2f9uwgpmber13.cloudfront.net/public/uploads/mobile/d0afa1adbfd78cdb8f47d6f48c23ea35",
     title: "BLACK ARROW 700C 7-SPEED - WHITE ORANGE",
     price: 22222,
+    
+  },
+  {
+    image:
+      "https://d2f9uwgpmber13.cloudfront.net/public/uploads/mobile/d0afa1adbfd78cdb8f47d6f48c23ea35",
+    title: "BLACK ARROW 700C 7-SPEED - WHITE ORANGE",
+    price: 22222,
+  },
+  {
+    image:
+      "https://d2f9uwgpmber13.cloudfront.net/public/uploads/mobile/d0afa1adbfd78cdb8f47d6f48c23ea35",
+    title: "BLACK ARROW 700C 7-SPEED - WHITE ORANGE",
+    price: 22222,
+  },
+  {
+    image:
+      "https://d2f9uwgpmber13.cloudfront.net/public/uploads/mobile/d0afa1adbfd78cdb8f47d6f48c23ea35",
+    title: "BLACK ARROW 700C 7-SPEED - WHITE ORANGE",
+    price: 22222,
+  },
+  {
+    image:
+      "https://d2f9uwgpmber13.cloudfront.net/public/uploads/mobile/d0afa1adbfd78cdb8f47d6f48c23ea35",
+    title: "BLACK ARROW 700C 7-SPEED - WHITE ORANGE",
+    price: 22222,
   },
   {
     image:
@@ -36,7 +61,7 @@ function displayOrders(orderItems) {
 
     let details_div = document.createElement("div");
 
-    let title = document.createElement("h3");
+    let title = document.createElement("h5");
     title.textContent = order.title;
 
     let price = document.createElement("p");
@@ -52,7 +77,7 @@ function displayOrders(orderItems) {
     let quantitiy = document.createElement("div");
 
     let spandec = document.createElement("span");
-    spandec.textContent = "-";
+    spandec.textContent = "−";
 
     let quan = 1;
 
@@ -61,7 +86,7 @@ function displayOrders(orderItems) {
   
 
     let spaninc = document.createElement("span");
-    spaninc.textContent = "+";
+    spaninc.textContent = "＋";
 
     quantitiy.append(spandec, quantitiy_p, spaninc);
 
@@ -79,8 +104,52 @@ function displayOrders(orderItems) {
     card_div.append(left_div,right_div);
 
    document.querySelector(".orderItems").append(card_div)
-
-
-
   });
 }
+
+
+displayrecommend(orderItems);
+
+function displayrecommend(orderItems){
+  orderItems.map((order)=>{
+
+    let card_div   = document.createElement("div");
+
+    let img_div  =  document.createElement("div")
+    let img  =  document.createElement("img")
+    img.src = order.image;
+
+    img_div.append(img);
+
+    let details_div  =  document.createElement("div")
+    let title  =  document.createElement("h5")
+     
+    title.textContent  =  order.title;
+
+    let price  =  document.createElement("p")
+    price.textContent = `Price: $${order.price}`;
+    
+    // <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
+    details_div.append(title,price)
+    
+    card_div.append(img_div,details_div);
+    document.querySelector(".recommend_div").append(card_div)
+   
+  })
+}
+
+// JavaScript code for sliding the recommendation section
+const recommendSection = document.querySelector(".recommend_div");
+const leftArrow = document.querySelector(".fa-chevron-left");
+const rightArrow = document.querySelector(".fa-chevron-right");
+
+// Set the scroll amount for each click
+const scrollAmount = 300;
+
+leftArrow.addEventListener("click", () => {
+  recommendSection.scrollLeft -= scrollAmount;
+});
+
+rightArrow.addEventListener("click", () => {
+  recommendSection.scrollLeft += scrollAmount;
+});
