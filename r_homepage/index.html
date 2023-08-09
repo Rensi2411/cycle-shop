@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+    <script src="https://kit.fontawesome.com/0b1bcdd578.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../r_footer/footer.css">
+    <link rel="stylesheet" href="../r_navbar/navbar.css">
+</head>
+<body>
+    <div id="navbar_import"></div>
+    <div></div>
+    <div id="footer_import"></div>
+</body>
+    <script type="module">
+        import footer from "../r_footer/footer.js";
+        let footers = document.getElementById("footer_import");
+        footers.innerHTML = footer();
+
+        import navbar from "../r_navbar/navbar.js";
+        let navbars = document.getElementById("navbar_import");
+        navbars.innerHTML = navbar();
+    </script>
+</html>
