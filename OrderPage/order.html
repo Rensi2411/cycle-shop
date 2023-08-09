@@ -10,11 +10,11 @@
         *{
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            /* box-sizing: border-box; */
         }
         .orderpage_Container{
             background-color:#262626;
-            padding: 3rem 8rem;
+            padding: 3rem 10rem;
 
         }
         .orderItems>div{
@@ -61,68 +61,175 @@
         border-radius: 5px;
       }
 
-
+ 
       .recommend_div{
         display: flex;
         gap: 1rem;
         padding: 2rem;
         overflow-x:auto;  
         white-space: nowrap;
+        transition: 2s;
+        scroll-behavior: smooth;
       }
       .recommend_div::-webkit-scrollbar{
         display: none;
       }
       .recommend_div>div{
       
-        width: 12rem;
+         width: 12rem;
         display: flex;
         flex-direction: column;
         gap: 1rem;
         border-radius: 10px;
-        max-width: 100%;
+    
         padding: .8rem 1rem;
         background-color: #fff;
         transition: 1s;
+        cursor: pointer;
+ 
       }
-        
+         
         .recommend_div>div:hover{
         transform: scale(1.1);
         box-shadow: 0 0 15px rgb(240, 5, 107);
       }
       img{
         width: 100%;
+        height: 100%;
       }
  
       .recommend_div>div>div:last-child{
-        
         display: flex;
         flex-direction: column;
-        gap: .5rem;
+         
+     
+      gap: 1rem;
       }
-      
+     
       .recommend_section{
         position: relative;
-         
+  
       }
       .fa-chevron-left{
         position: absolute;
         left: -2.2rem;
         top: 8rem;
-
-        font-size: 2rem;
+         background-color: #fff;
+        font-size: 1.5rem;
+        border-radius: 50%;
+        padding: .5rem .7rem;
+        cursor: pointer;
       }
       .fa-chevron-right{
         position: absolute;
         right:-2.2rem;
         top: 8rem;
-
+        background-color: #fff;
+        padding: .5rem .7rem;
+        font-size: 1.5rem;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      h3{
+        margin-top: 2rem;
+        color: #fff;
+        font-size: 1.5rem;
+ 
+      }
+      h1{
+        color: #fff;
+        margin: 1.5rem 0;
         font-size: 2rem;
       }
+      .orderpage_Container>p:first-child{
+        color: #848181;
+      }
+
+      #bottom_section{
+        display:flex;
+        margin-top: 2rem;
+        gap: 1rem;
+
+      }
+      .delevry_details{
+        flex: .7;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        background-color: #fff;
+        gap: 2rem;
+        padding: 1rem;
+        border-radius: 10px;
+        
+      }
+      .delevry_details>div>img{
+        width: 40px;
+        height: 50px;
+      }
+      .delevry_details h5{
+        margin: 0 0 .5rem;
+      }
+      .delevry_details>div:nth-child(2){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 10rem;
+      }
+      .delevry_details i{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+     
+      .delevry_details>div:last-child{
+        flex: 1;
+  display: flex;
+  flex-direction: column;
+   
+      } 
+ #credit{
+  color: red;
+   align-self:flex-end;
+   margin-right: 2.2rem;
+ }
+
+ .total_amount{
+  flex: .4;
+  background-color: #fff;
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+align-items: start;
+ }
+ .total_amount h3{
+  color: #000000;
+  margin: 0;
+ }
+ .total_amount div{
+ 
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+ }
+ .total_amount>div>p{
+  font-size: 1.5rem;
+ }
+
+ button{
+  padding: .7rem 1rem;
+  margin-top: .6rem;
+  border: none;
+  background-color:rgb(243, 26, 69);
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  
+ }
     </style>
 </head>
 <body>
     <div class="orderpage_Container" >
-        <p> <span><i class="fa-solid fa-house" style="color: #dddfe4;"></i></span> -- Your Order</p>
+        <p> <span><i class="fa-solid fa-house" style="color: #ffffff;"></i></span> -- Your Order</p>
         <section>
              <h1>YOUR ORDER</h1>
              <div class="orderItems">
@@ -133,12 +240,40 @@
         <section class="recommend_section">
           <h3>WE RECOMMEND</h3>
  
-          <i class="fa-solid fa-chevron-left" style="color: #f2f2f2;"></i>
+          <i class="fa-solid fa-chevron-left" style="color: #000000;"></i>
           <div class="recommend_div">
    
           </div>
-          <i class="fa-solid fa-chevron-right" style="color: #f5f5f5;"></i>
+          <i class="fa-solid fa-chevron-right" style="color: #000000;"></i>
  
+        </section>
+        <section id="bottom_section">
+          <div class="delevry_details" >
+             <div> <img src="tempo.png" alt="">
+              <h5>FAST DELIVERY</h5>
+              <P>We will deliver your order within 48 hours </P>
+             </div>
+             <div>
+              <i class="fa-solid fa-gear" style="color: #000000;"></i>
+              <div>
+                <h5>IMPECCABLE SERVICE</h5>
+                <p>We will help you to assemble the bike after delivery</p>
+              </div>
+             </div>
+             <div>
+              <i id="credit" class="fa-regular fa-credit-card" style="color: #000000;"></i>
+              <h5>SECURE PAYMENT</h5>
+              <P>We use 3d-secure to protect all payments</P>
+             </div>
+          </div>
+          <div class="total_amount">
+            <h3>TOTAL:</h3>
+            <div>
+              <p>$4444444444444</p>
+              <p>$777777</p>
+              <button>MAKE AN ORDER</button>
+            </div>
+          </div>
         </section>
     </div>
  <script src="orders.js"></script>
