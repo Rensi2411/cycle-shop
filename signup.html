@@ -4,57 +4,111 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div id="registration">
-      <div id="regi_child">
 
-           <h3>Create an Account</h3>
-           <input type="email" class="input_ele" placeholder="Email" />
-           <br/>
-           <br/>
-           <br/>
-           <input type="password" class="input_ele" placeholder="Password" />
-           <br/>
-           <br/>
-           <br/>
-           <input type="password" class="input_ele" placeholder="Confirm Password" />
-           <br/>
-           <br/>
-           <br/>
-           <input type="text" class="input_ele" placeholder="First Name" />
-           <br/>
-           <br/>
-           <br/>
-           <input type="text" class="input_ele" placeholder="Last Name" />
-           <br/>
-           <br/>
-           <div class="checkbox_div">
-                <input type="checkbox" class="chkbox">
-                <span>Sign me up to receive email offers and updates</span>
-           </div>
-           <br/>
-           <div class="checkbox_div">
-                <input type="checkbox" class="chkbox">            
-                <span>I accept the <a href="/sg/en/terms-and-conditions" target="_blank">Specialized Terms &amp; Conditions</a></span>
-           </div>
-           <br/>
-           <div class="checkbox_div">
-                <input type="checkbox" class="chkbox">            
-                <span>I accept the <a href="/sg/en/terms-of-use" target="_blank">Specialized Terms of Use</a></span>
-           </div>
-           <br/>
-           <div class="policy">I acknowledge Specialized will use my information in accordance with its <a href="/sg/en/privacy-policy" target="_blank">Privacy Policy</a>.
-          </div>
-          <br/>
-          <br/>  
-          <button class="btn">Create Account</button>
-          <br/>
-          <div class="login_nav">
-                 <p class="">Already have an account? <a href="./login.html">Login</a></p>      
-          </div>
-      </div>
+    
+  <div id="registration">
+    
+    <div id="regi_child">
+        <h3>Create an Account</h3>
+        <input type="email" class="input_ele" placeholder="Email" id="email" />
+        <br />
+        <br />
+        <br />
+        <input
+          type="password"
+          class="input_ele"
+          placeholder="Password"
+          id="password"
+        />
+        <br />
+        <br />
+        <br />
+        <input
+          type="text"
+          class="input_ele"
+          placeholder="First Name"
+          id="first_name"
+        />
+        <br />
+        <br />
+        <br />
+        <input
+          type="text"
+          class="input_ele"
+          placeholder="Last Name"
+          id="last_name"
+        />
+        <br />
+        <br />
+        <div class="checkbox_div">
+          <input type="checkbox" class="chkbox" />
+          <span>Sign me up to receive email offers and updates</span>
+        </div>
+        <br />
+        <div class="checkbox_div">
+          <input type="checkbox" class="chkbox" />
+          <span
+            >I accept the
+            <a  target="_blank"
+              >Specialized Terms &amp; Conditions</a
+            ></span
+          >
+        </div>
+        <br />
+        <div class="checkbox_div">
+          <input type="checkbox" class="chkbox" />
+          <span
+            >I accept the
+            <a  target="_blank"
+              >Specialized Terms of Use</a
+            ></span
+          >
+        </div>
+        <br />
+        <div id="policy">
+          I acknowledge Specialized will use my information in accordance with
+          its
+          <a target="_blank">Privacy Policy</a>.
+        </div>
+        <br />
+        <br />
+        <button id="btn">Create Account</button>
+        <br />
+        <div id="login_nav">
+          <p class="">
+            Already have an account? <a href="./login.html">Login</a>
+          </p>
+        </div>
+        <br />
+
     </div>
+  </div>
   </body>
 </html>
+
+<script>
+  // #email, #password, #first_name, #last_name
+  let email = document.querySelector("#email");
+  let password = document.querySelector("#password");
+  let firstName = document.querySelector("#first_name");
+  let lastName = document.querySelector("#last_name");
+
+  let create_btn = document.querySelector("#btn");
+  let Acc_data=JSON.parse(localStorage.getItem("acc_data")) || [];
+
+  create_btn.addEventListener("click", function () {
+    var acc_obj = {
+      Email: email.value,
+      Password: password.value,
+      FirstName: firstName.value,
+      LastName: lastName.value,
+    };
+    console.log(acc_obj);
+    Acc_data.push(acc_obj);
+    localStorage.setItem("acc_data",JSON.stringify(Acc_data));
+
+  });
+</script>

@@ -1,14 +1,38 @@
+
+
 #registration {
     width: 100%;
-    height: 1000px;
-    border: 1px dashed red;
+    /*height: 1000px;
     background-color: #464445;
+    border: 1px dashed red;*/
+    
     text-align: center;
     display: flex;
     justify-content: center;
+    
+    background-image: url("SignUpBackground.jpg");
+    border-radius: 8px;
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(0px);
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
   }
+  
+
+  *{
+    box-sizing: border-box;
+  }
+
   #regi_child{
-      width: 25%;   
+      width: 25%;  
   }
   #regi_child h3 {
     width: 100%;
@@ -17,7 +41,7 @@
     font-family: DIN W01 Medium, sans-serif;
     color: white;
   }
-  .input_ele {
+  #email, #password, #first_name, #last_name {
     font-family: DIN W01 Regular,sans-serif;
     font-size: 16px;
     line-height: 16px;
@@ -50,19 +74,18 @@
     height: 20px;
   }
   .checkbox_div{
-    width: 111%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     position: relative;
     /*border: 1px solid red;  */    
   }
-  .policy{
+  #policy{
     font-family: "DIN W01 Regular";
-    color: rgb(245, 240, 240);
-    
+    color: rgb(245, 240, 240); 
   }
   #regi_child button{
-    width: 112%;
+    width: 100%;
     border-style: solid;
     cursor: pointer;
     display: block;
@@ -78,12 +101,12 @@
     border-color: rgb(37, 37, 37);
     color: rgb(255, 255, 255);
   }
-  .login_nav{
+  #login_nav{
     display: flex;
     justify-content: space-evenly;
     width: 112%;
   }
-  .login_nav p{
+  #login_nav p{
     font-size: 16px;
     line-height: 19px;
     font-family: "DIN W01 Regular";
@@ -93,7 +116,7 @@
   @media only screen and (max-width: 631px) {
     #registration{
       width: 100%;
-      height: 1500px;
+      /*height: 1500px;*/
       display: flex;
       justify-content: center;
     }
@@ -103,7 +126,7 @@
       display: block;
     }
     
-    .input_ele{
+    #email, #password, #first_name, #last_name{
       height: 48px;
       width: 100%;
    }
@@ -112,7 +135,7 @@
       margin: 0px 0px 0px 0px; 
       padding: 0px 0px 0px 18px;
    }
-   .btn{
+   #btn{
       height: 48px;
       width: 112%;
    }
