@@ -9,7 +9,7 @@ filter.addEventListener("click", () => {
     let filter_popup = document.querySelector("#filter_popup_container");
 
     if (close.style.display === "none") {
-        
+
 
         filter_popup.style.display = "inline-block";
 
@@ -34,7 +34,7 @@ category.addEventListener("click", () => {
     let category_popup = document.querySelector("#category_popup_container");
 
     if (close.style.display === "none") {
-        
+
 
         category_popup.style.display = "inline-block";
 
@@ -59,7 +59,7 @@ experience.addEventListener("click", () => {
     let experience_popup = document.querySelector("#experience_popup_container");
 
     if (close.style.display === "none") {
-        
+
 
         experience_popup.style.display = "inline-block";
 
@@ -84,7 +84,7 @@ collection.addEventListener("click", () => {
     let collection_popup = document.querySelector("#collection_popup_container");
 
     if (close.style.display === "none") {
-        
+
 
         collection_popup.style.display = "inline-block";
 
@@ -109,7 +109,7 @@ productFamily.addEventListener("click", () => {
     let productFamily_popup = document.querySelector("#productFamily_popup_container");
 
     if (close.style.display === "none") {
-        
+
 
         productFamily_popup.style.display = "inline-block";
 
@@ -134,7 +134,7 @@ material.addEventListener("click", () => {
     let material_popup = document.querySelector("#material_popup_container");
 
     if (close.style.display === "none") {
-        
+
 
         material_popup.style.display = "inline-block";
 
@@ -159,7 +159,7 @@ size.addEventListener("click", () => {
     let size_popup = document.querySelector("#size_popup_container");
 
     if (close.style.display === "none") {
-        
+
 
         size_popup.style.display = "grid";
 
@@ -185,7 +185,7 @@ color.addEventListener("click", () => {
     let color_popup = document.querySelector("#color_popup_container");
 
     if (close.style.display === "none") {
-        
+
 
         color_popup.style.display = "grid";
 
@@ -210,7 +210,7 @@ type.addEventListener("click", () => {
     let type_popup = document.querySelector("#type_popup_container");
 
     if (close.style.display === "none") {
-        
+
 
         type_popup.style.display = "inline-block";
 
@@ -235,7 +235,7 @@ brakeType.addEventListener("click", () => {
     let brakeType_popup = document.querySelector("#brakeType_popup_container");
 
     if (close.style.display === "none") {
-        
+
 
         brakeType_popup.style.display = "inline-block";
 
@@ -260,7 +260,7 @@ drivetrain.addEventListener("click", () => {
     let drivetrain_popup = document.querySelector("#drivetrain_popup_container");
 
     if (close.style.display === "none") {
-        
+
 
         drivetrain_popup.style.display = "inline-block";
 
@@ -285,9 +285,9 @@ suspension.addEventListener("click", () => {
     let suspension_popup = document.querySelector("#suspension_popup_container");
 
     if (close.style.display === "none") {
-        
 
-    suspension_popup.style.display = "inline-block";
+
+        suspension_popup.style.display = "inline-block";
 
         close.style.display = "inline-block";
         expand.style.display = "none";
@@ -312,7 +312,7 @@ wheelSize.addEventListener("click", () => {
     let wheelSize_popup = document.querySelector("#wheelSize_popup_container");
 
     if (close.style.display === "none") {
-        
+
 
         wheelSize_popup.style.display = "inline-block";
 
@@ -334,38 +334,43 @@ let functions = document.querySelector("#functions");
 let productPage = document.querySelector("#productPage")
 
 
-filterIcon.addEventListener("click", () =>{
-      if(functions.style.display==="none"){
+filterIcon.addEventListener("click", () => {
+    if (functions.style.display === "none") {
         functions.style.display = "flex"
         productPage.style.width = "75%"
-      }
+    }
 
-      else{
+    else {
         functions.style.display = "none";
         productPage.style.width = "100%"
-      }
+    }
 })
 
 var product_box = document.querySelector("#product_box")
 
 
 async function displayMountainproducts() {
-    
-    try{
-        const url = "http://localhost:3000/bikes"
+
+    try {
+        const url = "http://localhost:4000/bikes"
 
         let response = await fetch(url);
         let result = await response.json();
         console.log(result)
 
-        result.forEach(function(element, index) {
+        result.forEach(function (element, index) {
             let previous_html = product_box.innerHTML;
+
+            if (index > 2) {
+                index = index / 3;
+            }
+
             let new_html = `
-            <div class="product_sub_box"> 
+            <div class="product_sub_box" > 
                     <img class = "product_img" style="background-color: white;" src=${element.large_img} alt="Cycle Image">
                     <button class = "color_btn" style="background-color: ${element.frame_colors[0]};"></button>
                     <p class="product_title">${element.title}</p>
-                    <p class="product_price">&#8364 ${element.year+7000+".00"}</p>
+                    <p class="product_price">&#8364 ${element.year + 7000 + ".00"}</p>
                     <img class = "wishlist_icon" src="./Images/wishlist icon small.png" alt="Wishlit icon">
                     <img class = "compare_icon" src="./Images/compare icon.png" alt="Compare Icon">
 
@@ -375,13 +380,38 @@ async function displayMountainproducts() {
             product_box.innerHTML = previous_html + new_html;
 
         })
-        
-        
+
+
     }
-    catch(error){
+    catch (error) {
         console.log(error)
     }
 }
 
 displayMountainproducts()
+
+
+
+
+
+function getProduct() {
+    var product_sub_box = document.querySelectorAll(".product_sub_box");
+    console.log(product_sub_box);
+    product_sub_box.forEach(function(element,index){
+        if(index>2){
+            index = index/2;
+        }
+        element.addEventListener("click", () =>{
+            
+            window.location.href = `./product${index+1}.html`
+            
+        })
+    })
+
+    
+}
+
+setTimeout(getProduct,1000)
+
+
 

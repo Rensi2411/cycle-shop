@@ -1,17 +1,123 @@
 {
     "bikes": [
         {
+            "large_img": "https://m.media-amazon.com/images/I/81VZgPyUj4L._SY450_.jpg",
+            "img2": "https://m.media-amazon.com/images/I/91yzwj5bjpL._SY355_.jpg",
+            "img3": "https://m.media-amazon.com/images/I/81YJaUtm2fL._SY355_.jpg",
+            "img4": "https://m.media-amazon.com/images/I/811GabfBunL._SY355_.jpg",
+            "img5": "https://m.media-amazon.com/images/I/91dxKrTuQAL._SY355_.jpg",
+            "title": "Lifelong Conqueror Freeride Shimano Gear Cycle",
+            "frame_colors": ["black"],
+            "front_wheel": "Traversal SL 29",
+            "rear_wheel": "TRAVERSE SL 29",
+            "Front_tire": "back",
+            "inner_tubes": "STANDARD, PRESTA VALVE",
+            "front_Wheel": "BUTCHER GRID TRAIL T7 29 * 2.3",
+            "description": "This Shimano 21 speed geared cycle comes with Disc Brakes and suspension for effortless Braking system built for your ease of use and maintenance, and excellent braking power. Specially designed to provide proper braking control on all terrains. The cycle has a sturdy and reliable steel frame that can brave rough riding conditions and terrains. The top-notch construction quality ensures that the bike has a long lifespan",
+            "rating": 4,
+            "size": "27.5T",
+            "year" : 4520
+        },
+        {
+            "large_img": "https://m.media-amazon.com/images/I/41mXAbIYkCL._SX300_SY300_QL70_FMwebp_.jpg",
+            "img2": "https://m.media-amazon.com/images/I/610OAk5EolL._SY355_.jpg",
+            "img3": "https://m.media-amazon.com/images/I/619TG7ES60L._SY355_.jpg",
+            "img4": "https://m.media-amazon.com/images/I/51ZGjaThlHL._SY355_.jpg",
+            "img5": "https://m.media-amazon.com/images/I/61sN7RK0fKL._SY355_.jpg",
+            "title": "Urban Terrain UT1000 Steel MTB 27.5 Mountain Cycle",
+            "frame_colors": ["black"],
+            "front_wheel": "Traversal SL 29",
+            "rear_wheel": "TRAVERSE SL 29",
+            "Front_tire": "back",
+            "inner_tubes": "STANDARD, PRESTA VALVE",
+            "front_Wheel": "BUTCHER GRID TRAIL T7 29 * 2.3",
+            "description": "The Shimano derailleurs and shifters are made with Japanese technology for a seamless gear shifting experience and trustworthy performance. The stylish bike has a 21 speed (7 X 3) setting that allows the rider to shift gears according to his requirement. The High-quality double disc brakes on both front and rear wheels ensure stable and quick braking. The disc brakes help you navigate safely during challenging situations such as a crowded market. ",
+            "year" : 2890,
+            "rating": 4.5
+        },
+        {
+            "large_img": "https://m.media-amazon.com/images/I/51jmGqXBniL._SX300_SY300_QL70_FMwebp_.jpg",
+            "img2": "https://m.media-amazon.com/images/I/710zByM7E0L._SX425_.jpg",
+            "img3": "https://m.media-amazon.com/images/I/71D+KvQQ+7L._SX425_.jpg",
+            "img4": "https://m.media-amazon.com/images/I/717+74BhW7L._SX425_.jpg",
+            "img5": "https://m.media-amazon.com/images/I/81fAUqR4QiL._SX425_.jpg",
+            "title": "Leader Scout MTB 26T Mountain Bicycle/Bike Without Gear Single Speed for Men ",
+            "frame_colors": ["#7D99B6"],
+            "front_wheel": "Traversal SL 29",
+            "rear_wheel": "TRAVERSE SL 29",
+            "Front_tire": "back",
+            "inner_tubes": "STANDARD, PRESTA VALVE",
+            "front_Wheel": "BUTCHER GRID TRAIL T7 29 * 2.3",
+            "description": "Leader Scout 26T bicycle is brought to you by Leader. The brand is reckoned for its high built quality and great reliability. The bicycle comes with a rigid frame and high grip tyres that will provide great traction and ultimate mobility for you to ride it with ease. It is surely a must have, as it will let you experience the fun and thrill of riding a bicycle. Hi tensile Steel Frame with ergonomic design to ensure comfortable ride for the rider!! All frames are designed using our inhouse design studio.",
+            "year" :2040,
+            "rating": 4.1
+        },
+        {
+            "large_img": "https://m.media-amazon.com/images/I/41lLhlWRwTL._SY355_.jpg",
+            "img2": "https://m.media-amazon.com/images/I/41tAjc53eBL._SX355_.jpg",
+            "img3" : "https://m.media-amazon.com/images/I/31DJbXLTG0L._SX355_.jpg",
+            "img4" : "https://m.media-amazon.com/images/I/41tqaKz4lVL._SX355_.jpg",
+            "img5" : "https://m.media-amazon.com/images/I/41tqaKz4lVL._SX355_.jpg",
+            "frame_colors": ["White"],
+            "title" : "ZA ENTERPRISES BMW Cycle Folding Cycle for Men",
+            "front_wheel": "Traversal SL 29",
+            "rear_wheel": "TRAVERSE SL 29",
+            "Front_tire": "back",
+            "inner_tubes": "STANDARD, PRESTA VALVE",
+            "front_Wheel": "BUTCHER GRID TRAIL T7 29 * 2.3",
+            "description" : "Colour:- White | Gears:- 21 Shimano Gears | Brake Type:- Double Disc Brake | Wheel Size:- 26 Inch | Tires:- Fat Magnesium Tires Easy folding mechanism: Convenient storage and transport. Adjustable seat and handlebars: Customizable for comfortable riding. Sports bike with 21 gear cycles: Offers versatile riding options",
+            "year" : 2850,
+            "rating": 3.9
+
+        },
+        {
+
+            "large_img"  : "https://m.media-amazon.com/images/I/61BHUGgu62L._SY355_.jpg",
+            "img2" : "https://m.media-amazon.com/images/I/61Q4ioZf00L._SY355_.jpg",
+            "img3" : "https://m.media-amazon.com/images/I/61Z-RxhIsEL._SY355_.jpg",
+            "img4" : "https://m.media-amazon.com/images/I/51R3CK0PaZL._SY355_.jpg",
+            "img5" : "https://m.media-amazon.com/images/I/5143C+uCBwL._SS75_.jpg", 
+            "title" : "Urban Terrain UT3012S27.5, Steel MTB 27.5 Mountain Cycle",
+            "frame_colors": ["Green"],
+            "front_wheel": "Traversal SL 29",
+            "rear_wheel": "TRAVERSE SL 29",
+            "Front_tire": "back",
+            "inner_tubes": "STANDARD, PRESTA VALVE",
+            "front_Wheel": "BUTCHER GRID TRAIL T7 29 * 2.3",
+            "description" : "The Shimano derailleurs and shifters are made with Japanese technology for a seamless gear shifting experience and trustworthy performance. The stylish bike has a 21 speed (7 X 3) setting that allows the rider to shift gears according to his requirement. The bike comes packed with light and strong double walled alloy rims along with 27.5 inches wide tyres that supports comfortable riding and a major performance advantage on the road.",
+            "year" : 2090,
+            "rating": 4.9
+
+
+
+        },
+        {
+
+            "large_img" : "https://m.media-amazon.com/images/I/51O1RieGyJL._SX300_SY300_QL70_FMwebp_.jpg",
+            "img1" : "https://m.media-amazon.com/images/I/71Xxk7aMpVL._SX425_.jpg",
+            "img2" : "https://m.media-amazon.com/images/I/81zLYWaLYzL._SX425_.jpg",
+            "img3" : "https://m.media-amazon.com/images/I/81YZwopbl+L._SX425_.jpg",
+            "img4" : "https://m.media-amazon.com/images/I/81-txAtuPKL._SX425_.jpg",
+            "img5" : "https://m.media-amazon.com/images/I/81zLYWaLYzL._SX425_.jpg",
+            "frame_colors": ["Orange"],
+            "title" : "Leader Men's Single Speed Without Gear City Surfer MTB 26T Mountain Bicycle",
+            "front_wheel": "Traversal SL 29",
+            "rear_wheel": "TRAVERSE SL 29",
+            "Front_tire": "back",
+            "inner_tubes": "STANDARD, PRESTA VALVE",
+            "front_Wheel": "BUTCHER GRID TRAIL T7 29 * 2.3",
+            "description" : "The cycle is delivered in Semi-Assembled condition (90% assembled). Customer needs to assemble it before use. Allen Key & Spanner provided in box for installation. Gear: Single Speed | Frame Material: Steel | Suspension: Rigid. Ideal For: 10+ Years | Min Rider Height: 5FT | Max Rider Height: 6FT",
+            "year" : 2050,
+            "rating": 3.4
+
+
+        },
+        {
             "description": "You know what they say—when the grams go away, speed comes out to play. Benefitting from the lightest EVO frame we’ve ever created and the most aggressive iteration of our Progressive XC Geometry to date, the S-Works Epic EVO LTD made a few calls and assembled a dream team supporting cast to offer a ‘capability-to-weight’ ratio that skips impressive and jumps straight to flat-out mindblowing. While the Epic EVO sees a seemingly modest 20-millimeter increase in suspension travel up front over its Epic stablemate and just 10-millimeters out back, we’ve worked overtime to make sure it’s been implemented in a way that’ll have you saying ‘Whoa!’ as soon as you hit your first stretch of singletrack.",
-
-            "front_wheel" : "Traversal SL 29",
-
-            "rear_wheel" : "TRAVERSE SL 29",
-
-            "Front Tire" : "BUTCHER GRID TRAIL Tg 29*23'' " ,
-            "inner_tubes" : "STANDARD, PRESTA VALVE",
-            
-            
-
+            "front_wheel": "Traversal SL 29",
+            "rear_wheel": "TRAVERSE SL 29",
+            "Front Tire": "BUTCHER GRID TRAIL Tg 29*23'' ",
+            "inner_tubes": "STANDARD, PRESTA VALVE",
             "frame_colors": [
                 "Black",
                 "Red"
@@ -27,28 +133,18 @@
             "year": 2017
         },
         {
-            
-            
             "description": " wheel size 26'', front suspension, 26'' Rock Creek. I replaced the original bike seat with a comfortable seat made in Italy You know what they say—when the grams go away, speed comes out to play. Benefitting from the lightest EVO frame we’ve ever created and the most aggressive iteration of our Progressive XC Geometry to date, the S-Works Epic EVO LTD made a few calls and assembled a dream team supporting cast to offer a ‘capability-to-weight’ ratio that skips impressive and jumps straight to flat-out mindblowing. While the Epic EVO sees a seemingly modest 20-millimeter increase in suspension travel up front over its Epic stablemate and just 10-millimeters out back, we’ve worked overtime to make sure it’s been implemented in a way that’ll have you saying ‘Whoa!’ as soon as you hit your first stretch of singletrack.",
-
-            "front_wheel" : "Traversal SL 29",
-
-            "rear_wheel" : "TRAVERSE SL 29",
-
-            "Front Tire" : "BUTCHER GRID TRAIL Tg 29*23'' " ,
-            "inner_tubes" : "STANDARD, PRESTA VALVE",
-
+            "front_wheel": "Traversal SL 29",
+            "rear_wheel": "TRAVERSE SL 29",
+            "Front Tire": "BUTCHER GRID TRAIL Tg 29*23'' ",
+            "inner_tubes": "STANDARD, PRESTA VALVE",
             "frame_colors": [
                 "Teal"
             ],
-           
             "id": 1571313,
-            
             "large_img": "https://contents.mediadecathlon.com/p2277244/k$f130ea8e12c6a12dbcee1660d3dff496/adult-folding-cycle-tilt-120-red.jpg?format=auto&quality=70&f=300x0",
             "manufacturer_name": "Huffy",
-            
             "serial": "8NHBT23F15953",
-           
             "thumb": "https://files.bikeindex.org/uploads/Pu/731986/small___2023-08-07_23.23.39.png",
             "title": "2023 Huffy",
             "url": "https://bikeindex.org/bikes/1571313",
@@ -56,27 +152,18 @@
         },
         {
             "description": "You know what they say—when the grams go away, speed comes out to play. Benefitting from the lightest EVO frame we’ve ever created and the most aggressive iteration of our Progressive XC Geometry to date, the S-Works Epic EVO LTD made a few calls and assembled a dream team supporting cast to offer a ‘capability-to-weight’ ratio that skips impressive and jumps straight to flat-out mindblowing. While the Epic EVO sees a seemingly modest 20-millimeter increase in suspension travel up front over its Epic stablemate and just 10-millimeters out back, we’ve worked overtime to make sure it’s been implemented in a way that’ll have you saying ‘Whoa!’ as soon as you hit your first stretch of singletrack.",
-
-            "front_wheel" : "Traversal SL 29",
-
-            "rear_wheel" : "TRAVERSE SL 29",
-
-            "Front Tire" : "BUTCHER GRID TRAIL Tg 29*23'' " ,
-            "inner_tubes" : "STANDARD, PRESTA VALVE",
-            
-            
+            "front_wheel": "Traversal SL 29",
+            "rear_wheel": "TRAVERSE SL 29",
+            "Front Tire": "BUTCHER GRID TRAIL Tg 29*23'' ",
+            "inner_tubes": "STANDARD, PRESTA VALVE",
             "frame_colors": [
                 "Blue"
             ],
             "frame_model": "Arroyo C5 HMB Elite",
             "id": 1570069,
-            
             "large_img": "https://contents.mediadecathlon.com/p2275901/k$142bd53976ed78d5f83fe4c1d02fd0d8/refurbished-adult-sport-mtb-cycle-rockrider-st100-grey-second-life.jpg?format=auto&quality=70&f=300x0",
-            
             "manufacturer_name": "Gazelle",
-            
             "serial": "GZ 62048390",
-           
             "thumb": "https://files.bikeindex.org/uploads/Pu/731171/small_PXL_20230806_032730657.jpg",
             "title": "2023 Gazelle Arroyo C5 HMB Elite",
             "url": "https://bikeindex.org/bikes/1570069",
@@ -84,28 +171,20 @@
         },
         {
             "description": "You know what they say—when the grams go away, speed comes out to play. Benefitting from the lightest EVO frame we’ve ever created and the most aggressive iteration of our Progressive XC Geometry to date, the S-Works Epic EVO LTD made a few calls and assembled a dream team supporting cast to offer a ‘capability-to-weight’ ratio that skips impressive and jumps straight to flat-out mindblowing. While the Epic EVO sees a seemingly modest 20-millimeter increase in suspension travel up front over its Epic stablemate and just 10-millimeters out back, we’ve worked overtime to make sure it’s been implemented in a way that’ll have you saying ‘Whoa!’ as soon as you hit your first stretch of singletrack.",
-
-            "front_wheel" : "Traversal SL 29",
-
-            "rear_wheel" : "TRAVERSE SL 29",
-
-            "Front Tire" : "BUTCHER GRID TRAIL Tg 29*23'' " ,
-            "inner_tubes" : "STANDARD, PRESTA VALVE",
-            
+            "front_wheel": "Traversal SL 29",
+            "rear_wheel": "TRAVERSE SL 29",
+            "Front Tire": "BUTCHER GRID TRAIL Tg 29*23'' ",
+            "inner_tubes": "STANDARD, PRESTA VALVE",
             "frame_colors": [
                 "Blue",
                 "Red"
             ],
             "frame_model": "Aggressor sport ",
             "id": 1571284,
-           
             "large_img": "https://contents.mediadecathlon.com/p2492346/k$a5115ab8387d95cf96a91dda10b51dd1/kids-cycle-8-12-years-24inch-rockrider-st100.jpg?format=auto&quality=70&f=300x0",
-            
             "manufacturer_name": "GT Bicycles",
-            
             "serial": "CM16M545842",
             "status": "with owner",
-           
             "thumb": "https://files.bikeindex.org/uploads/Pu/731979/small_image.jpg",
             "title": "GT Bicycles Aggressor sport",
             "url": "https://bikeindex.org/bikes/1571284",
@@ -163,186 +242,121 @@
         },
         {
             "description": "You know what they say—when the grams go away, speed comes out to play. Benefitting from the lightest EVO frame we’ve ever created and the most aggressive iteration of our Progressive XC Geometry to date, the S-Works Epic EVO LTD made a few calls and assembled a dream team supporting cast to offer a ‘capability-to-weight’ ratio that skips impressive and jumps straight to flat-out mindblowing. While the Epic EVO sees a seemingly modest 20-millimeter increase in suspension travel up front over its Epic stablemate and just 10-millimeters out back, we’ve worked overtime to make sure it’s been implemented in a way that’ll have you saying ‘Whoa!’ as soon as you hit your first stretch of singletrack.",
-
-            "front_wheel" : "Traversal SL 29",
-
-            "rear_wheel" : "TRAVERSE SL 29",
-
-            "Front Tire" : "BUTCHER GRID TRAIL Tg 29*23'' " ,
-            "inner_tubes" : "STANDARD, PRESTA VALVE",
-            
+            "front_wheel": "Traversal SL 29",
+            "rear_wheel": "TRAVERSE SL 29",
+            "Front Tire": "BUTCHER GRID TRAIL Tg 29*23'' ",
+            "inner_tubes": "STANDARD, PRESTA VALVE",
             "frame_colors": [
                 "Silver, gray or bare metal"
             ],
             "frame_model": "C100",
             "id": 1571222,
-            
             "large_img": "https://contents.mediadecathlon.com/p2275901/k$142bd53976ed78d5f83fe4c1d02fd0d8/refurbished-adult-sport-mtb-cycle-rockrider-st100-grey-second-life.jpg?format=auto&quality=70&f=300x0",
-           
             "manufacturer_name": "All City",
-            
             "serial": "D527206",
             "status": "with owner",
-            
             "thumb": "https://files.bikeindex.org/uploads/Pu/731953/small_16914623410074220219874873238134.jpg",
             "title": "2021 All City C100",
             "url": "https://bikeindex.org/bikes/1571222",
             "year": 2021
         },
         {
-           
-           
             "description": "RadMini Step-Thru folding ebike.  Brown seat and brown handle. 20x4 inch fat tires.  On 8/7/2023, bought it from the original purchases, Chauncenette Heard of Virginia Beach, VA. You know what they say—when the grams go away, speed comes out to play. Benefitting from the lightest EVO frame we’ve ever created and the most aggressive iteration of our Progressive XC Geometry to date, the S-Works Epic EVO LTD made a few calls and assembled a dream team supporting cast to offer a ‘capability-to-weight’ ratio that skips impressive and jumps straight to flat-out mindblowing. While the Epic EVO sees a seemingly modest 20-millimeter increase in suspension travel up front over its Epic stablemate and just 10-millimeters out back, we’ve worked overtime to make sure it’s been implemented in a way that’ll have you saying ‘Whoa!’ as soon as you hit your first stretch of singletrack.",
-
-            "front_wheel" : "Traversal SL 29",
-
-            "rear_wheel" : "TRAVERSE SL 29",
-
-            "Front Tire" : "BUTCHER GRID TRAIL Tg 29*23'' " ,
-            "inner_tubes" : "STANDARD, PRESTA VALVE",
-            
+            "front_wheel": "Traversal SL 29",
+            "rear_wheel": "TRAVERSE SL 29",
+            "Front Tire": "BUTCHER GRID TRAIL Tg 29*23'' ",
+            "inner_tubes": "STANDARD, PRESTA VALVE",
             "frame_colors": [
                 "White"
             ],
             "frame_model": "RadMini Step-Thru (2019)",
             "id": 1571205,
-           
             "large_img": "https://contents.mediadecathlon.com/p2492345/k$66a31127efab6b370f1214b90c531ff7/kids-cycle-4-6-years-16inch-robot-100.jpg?format=auto&quality=70&f=300x0",
-           
             "manufacturer_name": "Rad Power Bikes",
-            
             "serial": "LB819J110120",
             "status": "with owner",
-           
             "thumb": "https://files.bikeindex.org/uploads/Pu/731932/small_Screenshot_2023-08-07_at_10.06.43_PM.png",
             "title": "2019 Rad Power Bikes RadMini Step-Thru (2019)",
             "url": "https://bikeindex.org/bikes/1571205",
             "year": 2019
         },
         {
-            
-
             "description": " Alpha White Aluminum w/externally relieved head tube, bi-axial down tube, disc compatible dropouts You know what they say—when the grams go away, speed comes out to play. Benefitting from the lightest EVO frame we’ve ever created and the most aggressive iteration of our Progressive XC Geometry to date, the S-Works Epic EVO LTD made a few calls and assembled a dream team supporting cast to offer a ‘capability-to-weight’ ratio that skips impressive and jumps straight to flat-out mindblowing. While the Epic EVO sees a seemingly modest 20-millimeter increase in suspension travel up front over its Epic stablemate and just 10-millimeters out back, we’ve worked overtime to make sure it’s been implemented in a way that’ll have you saying ‘Whoa!’ as soon as you hit your first stretch of singletrack.",
-
-            "front_wheel" : "Traversal SL 29",
-
-            "rear_wheel" : "TRAVERSE SL 29",
-
-            "Front Tire" : "BUTCHER GRID TRAIL Tg 29*23'' " ,
-            "inner_tubes" : "STANDARD, PRESTA VALVE",
-
+            "front_wheel": "Traversal SL 29",
+            "rear_wheel": "TRAVERSE SL 29",
+            "Front Tire": "BUTCHER GRID TRAIL Tg 29*23'' ",
+            "inner_tubes": "STANDARD, PRESTA VALVE",
             "frame_colors": [
                 "Blue",
                 "White"
             ],
             "frame_model": "3900 WSD",
             "id": 1571194,
-            
             "large_img": "https://contents.mediadecathlon.com/p2488056/k$121c91a59a403aef78bb57df59eef95b/kids-cycle-6-8-years-20inch-rockrider-st-120.jpg?format=auto&quality=70&f=300x0",
-           
             "manufacturer_name": "Trek",
-          
             "serial": "WTU099C1955D",
             "status": "with owner",
-           
-           
             "thumb": "https://bikebook.s3.amazonaws.com/uploads/Fr/1516/small_3900wsd_softvelvetblue.jpg",
             "title": "2009 Trek 3900 WSD",
             "url": "https://bikeindex.org/bikes/1571194",
             "year": 2009
         },
         {
-
-         
-
             "description": "A1 Premium Aluminum, double-butted, ORE DT, externally relieved HT, reinforced disc mount, forged dropouts w/ replaceable 98954020 alloy hanger, disc only. You know what they say—when the grams go away, speed comes out to play. Benefitting from the lightest EVO frame we’ve ever created and the most aggressive iteration of our Progressive XC Geometry to date, the S-Works Epic EVO LTD made a few calls and assembled a dream team supporting cast to offer a ‘capability-to-weight’ ratio that skips impressive and jumps straight to flat-out mindblowing. While the Epic EVO sees a seemingly modest 20-millimeter increase in suspension travel up front over its Epic stablemate and just 10-millimeters out back, we’ve worked overtime to make sure it’s been implemented in a way that’ll have you saying ‘Whoa!’ as soon as you hit your first stretch of singletrack.",
-
-            "front_wheel" : "Traversal SL 29",
-
-            "rear_wheel" : "TRAVERSE SL 29",
-
-            "Front Tire" : "BUTCHER GRID TRAIL Tg 29*23'' " ,
-            "inner_tubes" : "STANDARD, PRESTA VALVE",
-            
-            
+            "front_wheel": "Traversal SL 29",
+            "rear_wheel": "TRAVERSE SL 29",
+            "Front Tire": "BUTCHER GRID TRAIL Tg 29*23'' ",
+            "inner_tubes": "STANDARD, PRESTA VALVE",
             "frame_colors": [
                 "Silver, gray or bare metal"
             ],
             "frame_model": "Hardrock Pro Disc",
             "id": 1571237,
-            
             "large_img": "https://contents.mediadecathlon.com/p1737693/k$630422394ea5a1ba14bd7c8210a757cc/refurbished-adult-hybrid-cycle-riverside-120-second-life.jpg?format=auto&quality=70&f=300x0",
-            
             "manufacturer_name": "Specialized",
-            
             "serial": "EN14766",
             "status": "with owner",
-            
-           
             "thumb": "https://files.bikeindex.org/uploads/Pu/731974/small_IMG_8026.jpeg",
             "title": "2008 Specialized Hardrock Pro Disc",
             "url": "https://bikeindex.org/bikes/1571237",
             "year": 2008
         },
         {
-           
-            
             "description": " 6061 T6 aluminum, butted and hydroformed tubing, cold-forged dropouts & bottom bracket, G2 29\" geometry. You know what they say—when the grams go away, speed comes out to play. Benefitting from the lightest EVO frame we’ve ever created and the most aggressive iteration of our Progressive XC Geometry to date, the S-Works Epic EVO LTD made a few calls and assembled a dream team supporting cast to offer a ‘capability-to-weight’ ratio that skips impressive and jumps straight to flat-out mindblowing. While the Epic EVO sees a seemingly modest 20-millimeter increase in suspension travel up front over its Epic stablemate and just 10-millimeters out back, we’ve worked overtime to make sure it’s been implemented in a way that’ll have you saying ‘Whoa!’ as soon as you hit your first stretch of singletrack.",
-
-            "front_wheel" : "Traversal SL 29",
-
-            "rear_wheel" : "TRAVERSE SL 29",
-
-            "Front Tire" : "BUTCHER GRID TRAIL Tg 29*23'' " ,
-            "inner_tubes" : "STANDARD, PRESTA VALVE",
-
-            
-
+            "front_wheel": "Traversal SL 29",
+            "rear_wheel": "TRAVERSE SL 29",
+            "Front Tire": "BUTCHER GRID TRAIL Tg 29*23'' ",
+            "inner_tubes": "STANDARD, PRESTA VALVE",
             "frame_colors": [
                 "Black"
             ],
             "frame_model": "Marlin",
             "id": 1571241,
-            
             "large_img": "https://rukminim2.flixcart.com/image/612/612/xif0q/cycle/d/l/a/beast-26t-multispeed-7-speed-mountain-bike-with-fs-dd-brake-26-original-imaggxzzzymmt9ry.jpeg?q=70",
-           
             "manufacturer_name": "Trek",
-            
             "serial": "WTU040C5187K",
             "status": "with owner",
-            
             "thumb": "https://files.bikeindex.org/uploads/Pu/731972/small_IMG_8027.jpeg",
             "title": "2010 Trek Marlin",
             "url": "https://bikeindex.org/bikes/1571241",
             "year": 2010
         },
         {
-            
-            
-
             "description": "Trek marlin 4 converted into electric. You know what they say—when the grams go away, speed comes out to play. Benefitting from the lightest EVO frame we’ve ever created and the most aggressive iteration of our Progressive XC Geometry to date, the S-Works Epic EVO LTD made a few calls and assembled a dream team supporting cast to offer a ‘capability-to-weight’ ratio that skips impressive and jumps straight to flat-out mindblowing. While the Epic EVO sees a seemingly modest 20-millimeter increase in suspension travel up front over its Epic stablemate and just 10-millimeters out back, we’ve worked overtime to make sure it’s been implemented in a way that’ll have you saying ‘Whoa!’ as soon as you hit your first stretch of singletrack.",
-
-            "front_wheel" : "Traversal SL 29",
-
-            "rear_wheel" : "TRAVERSE SL 29",
-
-            "Front Tire" : "BUTCHER GRID TRAIL Tg 29*23'' " ,
-            "inner_tubes" : "STANDARD, PRESTA VALVE",
-
+            "front_wheel": "Traversal SL 29",
+            "rear_wheel": "TRAVERSE SL 29",
+            "Front Tire": "BUTCHER GRID TRAIL Tg 29*23'' ",
+            "inner_tubes": "STANDARD, PRESTA VALVE",
             "frame_colors": [
                 "Silver, gray or bare metal",
                 "Blue"
             ],
             "frame_model": "Marlin 4",
             "id": 1571210,
-           
             "large_img": "https://rukminim2.flixcart.com/image/612/612/kw104nk0/cycle/f/w/p/torfin-26t-mtb-bicycle-without-gear-single-speed-with-fs-dd-original-imag8shx8mkcew9p.jpeg?q=70",
-           
             "manufacturer_name": "Trek",
-            
             "serial": "233c4069n",
             "status": "with owner",
-            
             "thumb": "https://files.bikeindex.org/uploads/Pu/731940/small_20230807_093458.jpg",
             "title": "Trek Marlin 4",
             "url": "https://bikeindex.org/bikes/1571210",
@@ -350,20 +364,15 @@
         },
         {
             "description": "You know what they say—when the grams go away, speed comes out to play. Benefitting from the lightest EVO frame we’ve ever created and the most aggressive iteration of our Progressive XC Geometry to date, the S-Works Epic EVO LTD made a few calls and assembled a dream team supporting cast to offer a ‘capability-to-weight’ ratio that skips impressive and jumps straight to flat-out mindblowing. While the Epic EVO sees a seemingly modest 20-millimeter increase in suspension travel up front over its Epic stablemate and just 10-millimeters out back, we’ve worked overtime to make sure it’s been implemented in a way that’ll have you saying ‘Whoa!’ as soon as you hit your first stretch of singletrack.",
-
-            "front_wheel" : "Traversal SL 29",
-
-            "rear_wheel" : "TRAVERSE SL 29",
-
-            "Front Tire" : "BUTCHER GRID TRAIL Tg 29*23'' " ,
-            "inner_tubes" : "STANDARD, PRESTA VALVE",
-            
+            "front_wheel": "Traversal SL 29",
+            "rear_wheel": "TRAVERSE SL 29",
+            "Front Tire": "BUTCHER GRID TRAIL Tg 29*23'' ",
+            "inner_tubes": "STANDARD, PRESTA VALVE",
             "frame_colors": [
                 "Black"
             ],
             "frame_model": "Fixed-Gear Bike",
             "id": 1571204,
-           
             "large_img": "https://rukminim2.flixcart.com/image/612/612/kt8zb0w0/cycle/p/b/k/xtrm-900-27-5-17-5-hrx-101-21-gear-original-imag6nfmc4sbay4n.jpeg?q=70",
             "location_found": null,
             "manufacturer_name": "6KU",
@@ -382,14 +391,10 @@
         },
         {
             "description": "You know what they say—when the grams go away, speed comes out to play. Benefitting from the lightest EVO frame we’ve ever created and the most aggressive iteration of our Progressive XC Geometry to date, the S-Works Epic EVO LTD made a few calls and assembled a dream team supporting cast to offer a ‘capability-to-weight’ ratio that skips impressive and jumps straight to flat-out mindblowing. While the Epic EVO sees a seemingly modest 20-millimeter increase in suspension travel up front over its Epic stablemate and just 10-millimeters out back, we’ve worked overtime to make sure it’s been implemented in a way that’ll have you saying ‘Whoa!’ as soon as you hit your first stretch of singletrack.",
-
-            "front_wheel" : "Traversal SL 29",
-
-            "rear_wheel" : "TRAVERSE SL 29",
-
-            "Front Tire" : "BUTCHER GRID TRAIL Tg 29*23'' " ,
-            "inner_tubes" : "STANDARD, PRESTA VALVE",
-            
+            "front_wheel": "Traversal SL 29",
+            "rear_wheel": "TRAVERSE SL 29",
+            "Front Tire": "BUTCHER GRID TRAIL Tg 29*23'' ",
+            "inner_tubes": "STANDARD, PRESTA VALVE",
             "frame_colors": [
                 "Silver, gray or bare metal"
             ],
@@ -414,15 +419,10 @@
         },
         {
             "description": " Seconds register bike color is white. You know what they say—when the grams go away, speed comes out to play. Benefitting from the lightest EVO frame we’ve ever created and the most aggressive iteration of our Progressive XC Geometry to date, the S-Works Epic EVO LTD made a few calls and assembled a dream team supporting cast to offer a ‘capability-to-weight’ ratio that skips impressive and jumps straight to flat-out mindblowing. While the Epic EVO sees a seemingly modest 20-millimeter increase in suspension travel up front over its Epic stablemate and just 10-millimeters out back, we’ve worked overtime to make sure it’s been implemented in a way that’ll have you saying ‘Whoa!’ as soon as you hit your first stretch of singletrack.",
-
-            "front_wheel" : "Traversal SL 29",
-
-            "rear_wheel" : "TRAVERSE SL 29",
-
-            "Front Tire" : "BUTCHER GRID TRAIL Tg 29*23'' " ,
-            "inner_tubes" : "STANDARD, PRESTA VALVE",
-           
-            
+            "front_wheel": "Traversal SL 29",
+            "rear_wheel": "TRAVERSE SL 29",
+            "Front Tire": "BUTCHER GRID TRAIL Tg 29*23'' ",
+            "inner_tubes": "STANDARD, PRESTA VALVE",
             "frame_colors": [
                 "Black"
             ],
@@ -447,14 +447,10 @@
         },
         {
             "description": "You know what they say—when the grams go away, speed comes out to play. Benefitting from the lightest EVO frame we’ve ever created and the most aggressive iteration of our Progressive XC Geometry to date, the S-Works Epic EVO LTD made a few calls and assembled a dream team supporting cast to offer a ‘capability-to-weight’ ratio that skips impressive and jumps straight to flat-out mindblowing. While the Epic EVO sees a seemingly modest 20-millimeter increase in suspension travel up front over its Epic stablemate and just 10-millimeters out back, we’ve worked overtime to make sure it’s been implemented in a way that’ll have you saying ‘Whoa!’ as soon as you hit your first stretch of singletrack.",
-
-            "front_wheel" : "Traversal SL 29",
-
-            "rear_wheel" : "TRAVERSE SL 29",
-
-            "Front Tire" : "BUTCHER GRID TRAIL Tg 29*23'' " ,
-            "inner_tubes" : "STANDARD, PRESTA VALVE",
-
+            "front_wheel": "Traversal SL 29",
+            "rear_wheel": "TRAVERSE SL 29",
+            "Front Tire": "BUTCHER GRID TRAIL Tg 29*23'' ",
+            "inner_tubes": "STANDARD, PRESTA VALVE",
             "frame_colors": [
                 "Orange"
             ],
@@ -478,15 +474,11 @@
             "year": 2023
         },
         {
-             "description": "A1 - XX Premium Aluminum, fully double butted, compact geometry frame. You know what they say—when the grams go away, speed comes out to play. Benefitting from the lightest EVO frame we’ve ever created and the most aggressive iteration of our Progressive XC Geometry to date, the S-Works Epic EVO LTD made a few calls and assembled a dream team supporting cast to offer a ‘capability-to-weight’ ratio that skips impressive and jumps straight to flat-out mindblowing. While the Epic EVO sees a seemingly modest 20-millimeter increase in suspension travel up front over its Epic stablemate and just 10-millimeters out back, we’ve worked overtime to make sure it’s been implemented in a way that’ll have you saying ‘Whoa!’ as soon as you hit your first stretch of singletrack.",
-
-            "front_wheel" : "Traversal SL 29",
-
-            "rear_wheel" : "TRAVERSE SL 29",
-
-            "Front Tire" : "BUTCHER GRID TRAIL Tg 29*23'' " ,
-            "inner_tubes" : "STANDARD, PRESTA VALVE",
-            
+            "description": "A1 - XX Premium Aluminum, fully double butted, compact geometry frame. You know what they say—when the grams go away, speed comes out to play. Benefitting from the lightest EVO frame we’ve ever created and the most aggressive iteration of our Progressive XC Geometry to date, the S-Works Epic EVO LTD made a few calls and assembled a dream team supporting cast to offer a ‘capability-to-weight’ ratio that skips impressive and jumps straight to flat-out mindblowing. While the Epic EVO sees a seemingly modest 20-millimeter increase in suspension travel up front over its Epic stablemate and just 10-millimeters out back, we’ve worked overtime to make sure it’s been implemented in a way that’ll have you saying ‘Whoa!’ as soon as you hit your first stretch of singletrack.",
+            "front_wheel": "Traversal SL 29",
+            "rear_wheel": "TRAVERSE SL 29",
+            "Front Tire": "BUTCHER GRID TRAIL Tg 29*23'' ",
+            "inner_tubes": "STANDARD, PRESTA VALVE",
             "frame_colors": [
                 "Black"
             ],
@@ -511,14 +503,10 @@
         },
         {
             "description": " All black fixie with some stickers toward the front and a black and gold bell with 守 kanji. You know what they say—when the grams go away, speed comes out to play. Benefitting from the lightest EVO frame we’ve ever created and the most aggressive iteration of our Progressive XC Geometry to date, the S-Works Epic EVO LTD made a few calls and assembled a dream team supporting cast to offer a ‘capability-to-weight’ ratio that skips impressive and jumps straight to flat-out mindblowing. While the Epic EVO sees a seemingly modest 20-millimeter increase in suspension travel up front over its Epic stablemate and just 10-millimeters out back, we’ve worked overtime to make sure it’s been implemented in a way that’ll have you saying ‘Whoa!’ as soon as you hit your first stretch of singletrack.",
-
-            "front_wheel" : "Traversal SL 29",
-
-            "rear_wheel" : "TRAVERSE SL 29",
-
-            "Front Tire" : "BUTCHER GRID TRAIL Tg 29*23'' " ,
-            "inner_tubes" : "STANDARD, PRESTA VALVE",
-            
+            "front_wheel": "Traversal SL 29",
+            "rear_wheel": "TRAVERSE SL 29",
+            "Front Tire": "BUTCHER GRID TRAIL Tg 29*23'' ",
+            "inner_tubes": "STANDARD, PRESTA VALVE",
             "frame_colors": [
                 "Black"
             ],
@@ -542,16 +530,11 @@
             "year": 2023
         },
         {
-            
             "description": "FSR M5 manipulated alloy frame w/ Transform monocoque TT, sealed cartridge bearing pivots and rear shock mount, replaceable derailleur hanger, two sets of water bottle bosses, disc only, 120mm travel You know what they say—when the grams go away, speed comes out to play. Benefitting from the lightest EVO frame we’ve ever created and the most aggressive iteration of our Progressive XC Geometry to date, the S-Works Epic EVO LTD made a few calls and assembled a dream team supporting cast to offer a ‘capability-to-weight’ ratio that skips impressive and jumps straight to flat-out mindblowing. While the Epic EVO sees a seemingly modest 20-millimeter increase in suspension travel up front over its Epic stablemate and just 10-millimeters out back, we’ve worked overtime to make sure it’s been implemented in a way that’ll have you saying ‘Whoa!’ as soon as you hit your first stretch of singletrack.",
-
-            "front_wheel" : "Traversal SL 29",
-
-            "rear_wheel" : "TRAVERSE SL 29",
-
-            "Front Tire" : "BUTCHER GRID TRAIL Tg 29*23'' " ,
-            "inner_tubes" : "STANDARD, PRESTA VALVE",
-
+            "front_wheel": "Traversal SL 29",
+            "rear_wheel": "TRAVERSE SL 29",
+            "Front Tire": "BUTCHER GRID TRAIL Tg 29*23'' ",
+            "inner_tubes": "STANDARD, PRESTA VALVE",
             "frame_colors": [
                 "Green"
             ],
@@ -575,15 +558,11 @@
             "year": 2007
         },
         {
-              "description": "You know what they say—when the grams go away, speed comes out to play. Benefitting from the lightest EVO frame we’ve ever created and the most aggressive iteration of our Progressive XC Geometry to date, the S-Works Epic EVO LTD made a few calls and assembled a dream team supporting cast to offer a ‘capability-to-weight’ ratio that skips impressive and jumps straight to flat-out mindblowing. While the Epic EVO sees a seemingly modest 20-millimeter increase in suspension travel up front over its Epic stablemate and just 10-millimeters out back, we’ve worked overtime to make sure it’s been implemented in a way that’ll have you saying ‘Whoa!’ as soon as you hit your first stretch of singletrack.",
-
-            "front_wheel" : "Traversal SL 29",
-
-            "rear_wheel" : "TRAVERSE SL 29",
-
-            "Front Tire" : "BUTCHER GRID TRAIL Tg 29*23'' " ,
-            "inner_tubes" : "STANDARD, PRESTA VALVE",
-            
+            "description": "You know what they say—when the grams go away, speed comes out to play. Benefitting from the lightest EVO frame we’ve ever created and the most aggressive iteration of our Progressive XC Geometry to date, the S-Works Epic EVO LTD made a few calls and assembled a dream team supporting cast to offer a ‘capability-to-weight’ ratio that skips impressive and jumps straight to flat-out mindblowing. While the Epic EVO sees a seemingly modest 20-millimeter increase in suspension travel up front over its Epic stablemate and just 10-millimeters out back, we’ve worked overtime to make sure it’s been implemented in a way that’ll have you saying ‘Whoa!’ as soon as you hit your first stretch of singletrack.",
+            "front_wheel": "Traversal SL 29",
+            "rear_wheel": "TRAVERSE SL 29",
+            "Front Tire": "BUTCHER GRID TRAIL Tg 29*23'' ",
+            "inner_tubes": "STANDARD, PRESTA VALVE",
             "frame_colors": [
                 "Red"
             ],
@@ -608,15 +587,10 @@
         },
         {
             "description": " Trek Color is Gloss Miami Green. You know what they say—when the grams go away, speed comes out to play. Benefitting from the lightest EVO frame we’ve ever created and the most aggressive iteration of our Progressive XC Geometry to date, the S-Works Epic EVO LTD made a few calls and assembled a dream team supporting cast to offer a ‘capability-to-weight’ ratio that skips impressive and jumps straight to flat-out mindblowing. While the Epic EVO sees a seemingly modest 20-millimeter increase in suspension travel up front over its Epic stablemate and just 10-millimeters out back, we’ve worked overtime to make sure it’s been implemented in a way that’ll have you saying ‘Whoa!’ as soon as you hit your first stretch of singletrack.",
-
-            "front_wheel" : "Traversal SL 29",
-
-            "rear_wheel" : "TRAVERSE SL 29",
-
-            "Front Tire" : "BUTCHER GRID TRAIL Tg 29*23'' " ,
-            "inner_tubes" : "STANDARD, PRESTA VALVE",
-            
-           
+            "front_wheel": "Traversal SL 29",
+            "rear_wheel": "TRAVERSE SL 29",
+            "Front Tire": "BUTCHER GRID TRAIL Tg 29*23'' ",
+            "inner_tubes": "STANDARD, PRESTA VALVE",
             "frame_colors": [
                 "Green"
             ],
@@ -641,14 +615,10 @@
         },
         {
             "description": "You know what they say—when the grams go away, speed comes out to play. Benefitting from the lightest EVO frame we’ve ever created and the most aggressive iteration of our Progressive XC Geometry to date, the S-Works Epic EVO LTD made a few calls and assembled a dream team supporting cast to offer a ‘capability-to-weight’ ratio that skips impressive and jumps straight to flat-out mindblowing. While the Epic EVO sees a seemingly modest 20-millimeter increase in suspension travel up front over its Epic stablemate and just 10-millimeters out back, we’ve worked overtime to make sure it’s been implemented in a way that’ll have you saying ‘Whoa!’ as soon as you hit your first stretch of singletrack.",
-
-            "front_wheel" : "Traversal SL 29",
-
-            "rear_wheel" : "TRAVERSE SL 29",
-
-            "Front Tire" : "BUTCHER GRID TRAIL Tg 29*23'' " ,
-            "inner_tubes" : "STANDARD, PRESTA VALVE",
-            
+            "front_wheel": "Traversal SL 29",
+            "rear_wheel": "TRAVERSE SL 29",
+            "Front Tire": "BUTCHER GRID TRAIL Tg 29*23'' ",
+            "inner_tubes": "STANDARD, PRESTA VALVE",
             "frame_colors": [
                 "Black"
             ],
@@ -673,15 +643,10 @@
         },
         {
             "description": "It's a lovely black BMW M Bike! Touring style with a back rack for pannier bags, and a make-shift rear fender to ward off back splashes. The bell has ben repaired with LEGO! You know what they say—when the grams go away, speed comes out to play. Benefitting from the lightest EVO frame we’ve ever created and the most aggressive iteration of our Progressive XC Geometry to date, the S-Works Epic EVO LTD made a few calls and assembled a dream team supporting cast to offer a ‘capability-to-weight’ ratio that skips impressive and jumps straight to flat-out mindblowing. While the Epic EVO sees a seemingly modest 20-millimeter increase in suspension travel up front over its Epic stablemate and just 10-millimeters out back, we’ve worked overtime to make sure it’s been implemented in a way that’ll have you saying ‘Whoa!’ as soon as you hit your first stretch of singletrack.",
-
-            "front_wheel" : "Traversal SL 29",
-
-            "rear_wheel" : "TRAVERSE SL 29",
-
-            "Front Tire" : "BUTCHER GRID TRAIL Tg 29*23'' " ,
-            "inner_tubes" : "STANDARD, PRESTA VALVE",
-            
-            
+            "front_wheel": "Traversal SL 29",
+            "rear_wheel": "TRAVERSE SL 29",
+            "Front Tire": "BUTCHER GRID TRAIL Tg 29*23'' ",
+            "inner_tubes": "STANDARD, PRESTA VALVE",
             "frame_colors": [
                 "Black"
             ],
@@ -705,16 +670,11 @@
             "year": 2021
         },
         {
-           
             "description": "You know what they say—when the grams go away, speed comes out to play. Benefitting from the lightest EVO frame we’ve ever created and the most aggressive iteration of our Progressive XC Geometry to date, the S-Works Epic EVO LTD made a few calls and assembled a dream team supporting cast to offer a ‘capability-to-weight’ ratio that skips impressive and jumps straight to flat-out mindblowing. While the Epic EVO sees a seemingly modest 20-millimeter increase in suspension travel up front over its Epic stablemate and just 10-millimeters out back, we’ve worked overtime to make sure it’s been implemented in a way that’ll have you saying ‘Whoa!’ as soon as you hit your first stretch of singletrack.",
-
-            "front_wheel" : "Traversal SL 29",
-
-            "rear_wheel" : "TRAVERSE SL 29",
-
-            "Front Tire" : "BUTCHER GRID TRAIL Tg 29*23'' " ,
-            "inner_tubes" : "STANDARD, PRESTA VALVE",
-
+            "front_wheel": "Traversal SL 29",
+            "rear_wheel": "TRAVERSE SL 29",
+            "Front Tire": "BUTCHER GRID TRAIL Tg 29*23'' ",
+            "inner_tubes": "STANDARD, PRESTA VALVE",
             "frame_colors": [
                 "Silver, gray or bare metal",
                 "Black"
@@ -740,15 +700,10 @@
         },
         {
             "description": "You know what they say—when the grams go away, speed comes out to play. Benefitting from the lightest EVO frame we’ve ever created and the most aggressive iteration of our Progressive XC Geometry to date, the S-Works Epic EVO LTD made a few calls and assembled a dream team supporting cast to offer a ‘capability-to-weight’ ratio that skips impressive and jumps straight to flat-out mindblowing. While the Epic EVO sees a seemingly modest 20-millimeter increase in suspension travel up front over its Epic stablemate and just 10-millimeters out back, we’ve worked overtime to make sure it’s been implemented in a way that’ll have you saying ‘Whoa!’ as soon as you hit your first stretch of singletrack.",
-
-            "front_wheel" : "Traversal SL 29",
-
-            "rear_wheel" : "TRAVERSE SL 29",
-
-            "Front Tire" : "BUTCHER GRID TRAIL Tg 29*23'' " ,
-            "inner_tubes" : "STANDARD, PRESTA VALVE",
-
-            
+            "front_wheel": "Traversal SL 29",
+            "rear_wheel": "TRAVERSE SL 29",
+            "Front Tire": "BUTCHER GRID TRAIL Tg 29*23'' ",
+            "inner_tubes": "STANDARD, PRESTA VALVE",
             "frame_colors": [
                 "Black",
                 "Blue"
