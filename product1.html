@@ -19,7 +19,8 @@
 
         <div class="left_product_Detail">
             <div class="mainImg">
-                <img src="https://assets.specialized.com/i/specialized/90622-01_TARMAC-SL7-SW-DI2-REDTNT-METWHTSIL-BLK_HERO?bg=rgb(241,241,241)&w=1600&h=900&fmt=auto" alt="">
+                <img src="https://assets.specialized.com/i/specialized/90622-01_TARMAC-SL7-SW-DI2-REDTNT-METWHTSIL-BLK_HERO?bg=rgb(241,241,241)&w=1600&h=900&fmt=auto"
+                    alt="">
                 <div class="btns">
                     <img src="./Images/leftArrow.png" class="leftArrow" alt="">
                     <img src="./Images/rightArrow.png" class="rightArrow" alt="">
@@ -27,11 +28,21 @@
 
             </div>
             <div class="allImg">
-                <img class="img1 " src="https://assets.specialized.com/i/specialized/90622-01_TARMAC-SL7-SW-DI2-REDTNT-METWHTSIL-BLK_HERO?bg=rgb(241,241,241)&w=1600&h=900&fmt=auto" alt="">
-                <img class="img2 " src="https://assets.specialized.com/i/specialized/90622-01_TARMAC-SL7-SW-DI2-REDTNT-METWHTSIL-BLK_FDSQ?bg=rgb(241,241,241)&w=1600&h=900&fmt=auto" alt="">
-                <img class="img3 " src="https://assets.specialized.com/i/specialized/90622-01_TARMAC-SL7-SW-DI2-REDTNT-METWHTSIL-BLK_RDSQ?bg=rgb(241,241,241)&w=1600&h=900&fmt=auto" alt="">
-                <img class="img4 " src="https://assets.specialized.com/i/specialized/90622-01_TARMAC-SL7-SW-DI2-REDTNT-METWHTSIL-BLK_D1-POV?bg=rgb(241,241,241)&w=1600&h=900&fmt=auto" alt="">
-                <img class="img5 " src="https://assets.specialized.com/i/specialized/90622-01_TARMAC-SL7-SW-DI2-REDTNT-METWHTSIL-BLK_D3-HT?bg=rgb(241,241,241)&w=1600&h=900&fmt=auto" alt="">
+                <img class="img1 "
+                    src="https://assets.specialized.com/i/specialized/90622-01_TARMAC-SL7-SW-DI2-REDTNT-METWHTSIL-BLK_HERO?bg=rgb(241,241,241)&w=1600&h=900&fmt=auto"
+                    alt="">
+                <img class="img2 "
+                    src="https://assets.specialized.com/i/specialized/90622-01_TARMAC-SL7-SW-DI2-REDTNT-METWHTSIL-BLK_FDSQ?bg=rgb(241,241,241)&w=1600&h=900&fmt=auto"
+                    alt="">
+                <img class="img3 "
+                    src="https://assets.specialized.com/i/specialized/90622-01_TARMAC-SL7-SW-DI2-REDTNT-METWHTSIL-BLK_RDSQ?bg=rgb(241,241,241)&w=1600&h=900&fmt=auto"
+                    alt="">
+                <img class="img4 "
+                    src="https://assets.specialized.com/i/specialized/90622-01_TARMAC-SL7-SW-DI2-REDTNT-METWHTSIL-BLK_D1-POV?bg=rgb(241,241,241)&w=1600&h=900&fmt=auto"
+                    alt="">
+                <img class="img5 "
+                    src="https://assets.specialized.com/i/specialized/90622-01_TARMAC-SL7-SW-DI2-REDTNT-METWHTSIL-BLK_D3-HT?bg=rgb(241,241,241)&w=1600&h=900&fmt=auto"
+                    alt="">
             </div>
 
             <div class="characteristics">
@@ -154,9 +165,10 @@
                 <div class="size">
                     <p>Size</p>
                     <div class="size_btn">
-                        <button>XS</button>
-                        <button>S</button>
-                        <button>M</button>
+
+                        <button class="size_options">XS</button>
+                        <button class="size_options">S</button>
+                        <button class="size_options">M</button>
                     </div>
                 </div>
 
@@ -171,7 +183,7 @@
                 </div>
 
                 <div class="current_price">
-                    <p>&#8364; 10500.00 </p>
+                    <p>&#8364; 11520.00 </p>
                 </div>
 
             </div>
@@ -180,7 +192,7 @@
 
             <div class="Icons">
                 <div class="cartIcon">
-                    
+
                     <img src="./Images/redCart.png" style="width: 25px; height: 25px;" alt="">
                     <p>ADD TO CART</p>
                 </div>
@@ -208,22 +220,22 @@
                 </div>
                 <div style="display: flex;">
                     <div class="payment1">
-                        
+
                         <p>Payment by <br> card Online</p>
                         <img src="./Images/visaCard.png" alt="">
                     </div>
                     <div class="payment1">
-                        
+
                         <p>Payment by <br> Cash</p>
                         <img src="./Images/cash.png" alt="">
                     </div>
 
                     <div class="payment1">
-                        
+
                         <p>Payment by <br> card Online</p>
                         <img src="./Images/masterCard.png" alt="">
                     </div>
-                    
+
                 </div>
             </div>
 
@@ -411,21 +423,59 @@
 
 <script type="module">
 
-    async function fetchData() {
+    let size_options = document.querySelectorAll(".size_options")
 
-        const url = "http://localhost:4000/bikes"
-        try {
-            let response = await fetch(url)
-            let result = await response.json();
-            console.log(result[0])
+    let size1 = document.querySelector(".size_options:nth-child(1)")
+    let size2 = document.querySelector(".size_options:nth-child(2)")
+    let size3 = document.querySelector(".size_options:nth-child(3)")
 
-        }
-        catch (error) {
-            console.log(error)
-        }
+    function changeSize(element) {
+
+
+        size_options.forEach(ele => {
+
+            ele.classList.remove('selected')
+
+
+        })
+
+        element.classList.add('selected');
     }
-    fetchData()
 
+    size1.addEventListener("click", function () {
+        changeSize(size1)
+    })
+    size2.addEventListener("click", function () {
+        changeSize(size2)
+    })
+    size3.addEventListener("click", function () {
+        changeSize(size3)
+    })
+
+    function checkSize() {
+        let isSelected = false;
+        size_options.forEach(ele => {
+            
+
+            
+            if(ele.classList[1] === "selected"){
+                isSelected = true;
+            }
+
+        })
+        return isSelected
+    }
+
+   var cart = document.querySelector(".cartIcon")
+   cart.addEventListener("click" , () =>{
+    if(checkSize()){
+        alert("Item added to cart!!")
+        window.location.href = "./cart.html"
+    }
+    else{
+        alert("Select Size !!!")
+    }
+   })
 
 
     let bigImg = document.querySelector(".mainImg>img")
@@ -465,10 +515,10 @@
     let leftArrow = document.querySelector(".leftArrow")
     let rightArrow = document.querySelector(".rightArrow");
 
-    leftArrow.addEventListener("click" , function(){
+    leftArrow.addEventListener("click", function () {
         changeImg(img3);
     })
-    rightArrow.addEventListener("click" , function(){
+    rightArrow.addEventListener("click", function () {
         changeImg(img2);
     })
 

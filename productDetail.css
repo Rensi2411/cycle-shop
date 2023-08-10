@@ -261,12 +261,20 @@ body {
     gap: 30px;
 }
 
+.selected{
+    border: 1px solid white !important;
+    background-color: rgb(183, 28, 28);
+    
+ }
 .color_size .size_btn {
     display: flex;
     gap: 7px;
+   
 
 }
-
+.size_options{
+    cursor: pointer;
+}
 .color_size .size_btn button {
     width: 70px;
     height: 25px;

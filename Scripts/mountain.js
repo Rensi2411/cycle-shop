@@ -1,4 +1,6 @@
-
+let totalpages;
+let limit = 12;
+let pageNum = 1;
 
 let filter = document.querySelector(".filter .sub_box");
 
@@ -349,14 +351,19 @@ filterIcon.addEventListener("click", () => {
 var product_box = document.querySelector("#product_box")
 
 
+let fetchedData;
+
+let url = "http://localhost:3000/bikes"
+
+displayMountainproducts()
 async function displayMountainproducts() {
 
     try {
-        const url = "http://localhost:4000/bikes"
 
-        let response = await fetch(url);
-        let result = await response.json();
-        console.log(result)
+
+        var response = await fetch(url);
+        var result = await response.json();
+        fetchedData = result;
 
         result.forEach(function (element, index) {
             let previous_html = product_box.innerHTML;
@@ -370,13 +377,12 @@ async function displayMountainproducts() {
                     <img class = "product_img" style="background-color: white;" src=${element.large_img} alt="Cycle Image">
                     <button class = "color_btn" style="background-color: ${element.frame_colors[0]};"></button>
                     <p class="product_title">${element.title}</p>
-                    <p class="product_price">&#8364 ${element.year + 7000 + ".00"}</p>
+                    <p class="product_price">&#8364 ${element.price}</p>
                     <img class = "wishlist_icon" src="./Images/wishlist icon small.png" alt="Wishlit icon">
                     <img class = "compare_icon" src="./Images/compare icon.png" alt="Compare Icon">
 
                 </div>
             `
-
             product_box.innerHTML = previous_html + new_html;
 
         })
@@ -388,30 +394,159 @@ async function displayMountainproducts() {
     }
 }
 
-displayMountainproducts()
 
+console.log(fetchedData)
+
+function displayProducts(array) {
+    product_box.innerHTML = "";
+    array.forEach(function (element, index) {
+        let previous_html = product_box.innerHTML;
+
+        if (index > 2) {
+            index = index / 3;
+        }
+
+        let new_html = `
+        <div class="product_sub_box" > 
+                <img class = "product_img" style="background-color: white;" src=${element.large_img} alt="Cycle Image">
+                <button class = "color_btn" style="background-color: ${element.frame_colors[0]};"></button>
+                <p class="product_title">${element.title}</p>
+                <p class="product_price">&#8364 ${element.price}</p>
+                <img class = "wishlist_icon" src="./Images/wishlist icon small.png" alt="Wishlit icon">
+                <img class = "compare_icon" src="./Images/compare icon.png" alt="Compare Icon">
+
+            </div>
+        `
+
+        product_box.innerHTML = previous_html + new_html;
+
+    })
+}
+
+
+var sortButton = document.querySelector("#sort_options");
+sortButton.addEventListener("change", (event) => {
+
+    // console.log(temp)
+    if (event.target.value === "Price (High-Low)") {
+        result.sort((a, b) => b.price - a.price);
+
+        product_box.innerHTML = ""
+        displayProducts(result);
+    }
+
+    else if (event.target.value === "Price (Low-High)") {
+        result.sort((a, b) => a.price - b.price);
+
+        product_box.innerHTML = ""
+        displayProducts(result);
+    }
+    else if (event.target.value === "Default") {
+        product_box.innerHTML = ""
+        displayMountainproducts()
+    }
+})
 
 
 
 
 function getProduct() {
     var product_sub_box = document.querySelectorAll(".product_sub_box");
-    console.log(product_sub_box);
-    product_sub_box.forEach(function(element,index){
-        if(index>2){
-            index = index/2;
+
+    // console.log(product_sub_box);
+    product_sub_box.forEach(function (element, index) {
+        if (index > 2) {
+            index = index / 2;
         }
-        element.addEventListener("click", () =>{
-            
-            window.location.href = `./product${index+1}.html`
-            
+        element.addEventListener("click", () => {
+
+            window.location.href = `./product${index + 1}.html`
+
         })
     })
 
-    
+
 }
 
-setTimeout(getProduct,1000)
+setTimeout(getProduct, 1000)
 
 
 
+
+
+
+
+
+
+let category_options = document.querySelectorAll("#category_popup_container");
+
+category_options.forEach((element, index) => {
+    element.addEventListener("click", function (event) {
+
+
+
+        type = event.target.textContent;
+        console.log(type)
+
+
+    })
+})
+
+
+// pagination
+
+
+let prev = document.getElementById("prev")
+let next = document.getElementById("next")
+getWinesPagination(pageNum)
+
+async function getWinesPagination(pageNum) {
+    if (pageNum == 1) {
+        prev.disabled = true
+    }
+    else {
+        prev.disabled = false
+    }
+
+    if (pageNum === totalpages) {
+        next.disabled = true
+    }
+    else {
+        next.disabled = false
+    }
+    try {
+
+        let res = await fetch(`http://localhost:3000/bikes?_page=${pageNum}&_limit=12`)
+        let data2 = await res.json()
+        // console.log(data2)
+        let totalItems = res.headers.get("X-Total-Count"); // Retrieve the header after response.json()
+        totalpages = totalItems / limit
+        // console.log(totalpages)
+        // console.log(totalItems);
+        document.getElementById("page").innerHTML = "Page No:  " + pageNum
+        // display(data.data)
+        displayProducts(data2)
+
+    } catch (err) {
+        console.log(err)
+    }
+}
+
+////////////
+prev.addEventListener("click", () => {
+    if (pageNum == 1) {
+        return
+    }
+    pageNum--
+    getWinesPagination(pageNum)
+})
+
+
+next.addEventListener("click", () => {
+    if (pageNum == totalpages) {
+        return
+    }
+    pageNum++
+    getWinesPagination(pageNum)
+})
+///////////

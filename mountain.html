@@ -32,7 +32,7 @@
 
                 <div id="filter_popup_container" style="display: none;">
 
-                    <p>Hii</p>
+                    <p>Apply Filter</p>
 
                 </div>
             </div>
@@ -54,10 +54,10 @@
 
 
                 <div id="category_popup_container" style="display: none;">
-                    <p><span style="display: none;">&#10004</span> Active</p>
-                    <p><span style="display: none;">&#10004</span> Kids</p>
-                    <p><span style="display: non;">&#10004</span> Mountain</p>
-                    <p><span style="display: none;">&#10004</span> Road</p>
+                    <p><span style="display: none;"></span> Active</p>
+                    <p><span style="display: none;"></span> Kids</p>
+                    <p><span style="display: none;"></span> Mountain</p>
+                    <p><span style="display: none;"></span> Road</p>
 
                 </div>
             </div>
@@ -337,22 +337,22 @@
 
             </div>
 
-            <hr>
+            
 
 
 
         </div>
 
         <div id="productPage">
-            <div class="topbar" >
+            <div class="topbar">
                 <div class="sort">
                     <label for="sort">SORT BY : </label>
 
                     <select name="sort" id="sort_options">
 
-                        <option value="New">New</option>
-                        <option value="Highest Rating">Highest Rating</option>
-                        <option value="Price (High-Low)" selected>Price (High-Low)</option>
+                        <option value="Default" selected>Default</option>
+                        
+                        <option value="Price (High-Low)">Price (High-Low)</option>
                         <option value="Price (Low-High)">Price (Low-High)</option>
                     </select>
 
@@ -365,9 +365,21 @@
             </div>
 
             <div id="product_box">
-                
+
             </div>
 
+            <div id="paginationButton">
+
+     
+                <button id="prev"><<</button>
+                <h2 id="page"></h2>
+                <button id="next">>></button>
+          
+             </div>
+
+            <div id="footer">
+                <!-- add Footer Code here -->
+            </div>
         </div>
     </div>
 </body>
