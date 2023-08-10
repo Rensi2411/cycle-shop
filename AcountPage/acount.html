@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>acountpae</title>
+    <script src="https://kit.fontawesome.com/eed82eddcd.js" crossorigin="anonymous"></script>  
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            background-color: #414040;
+            
+        }
+        .Container{
+             
+            padding: 3rem 10rem;
+        }
+        .Container >div{
+   display: flex;
+   gap: 3rem;
+   justify-content:space-between;
+  
+
+        }
+        #left_sec{
+            flex: .5;
+        border: 1px solid red;
+        }
+        #left_sec>div{
+            display: flex;
+        align-items: center;
+        gap: .4rem;
+        cursor: pointer;
+            padding: .8rem .2rem;
+            padding-right: 3rem;
+            border-bottom: 1px solid gray;
+            color: #a29f9f;
+            font-weight: 600;
+        }
+        
+        #left_sec>div i{
+            font-size: 25px;
+             
+        }
+       #right_sec{
+        padding: .2rem 2rem;
+        border: 1px solid red;
+        flex: .8;
+        color: #fff;
+       }
+        .top_change{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: .5rem;
+            color: #8d8b8b;
+            font-weight: 600;
+        }
+        #right_sec input{
+            background-color: #fff;
+            border: none;
+            outline: none;
+            padding: .7rem .5rem;
+            border-radius: 3px;
+            width: 100%;
+            font-weight: 600;
+        }
+        .input_div>div ,.Password_div{
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            margin-bottom: 1.3rem;
+        }
+        .gander{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: .5rem;
+            /* width: 100%; */
+        }
+        input::placeholder{
+            color: #a7a6a6bd;
+        }
+        .gander button{
+            background-color: #fff;
+            color: #000000;
+            border: none;
+            outline: none;
+            padding: .7rem .6rem;
+            border-radius: 3px;
+            padding-right: 4.6rem;
+
+        }
+        .Container>div{
+            margin-top: 2rem;
+        }
+        #right_sec>div{
+            margin-top: 1.5rem;
+        }
+        h1{
+            color: #fff;
+            margin-top: 1.4rem;
+        }
+        .top_p{
+            color: #fff;
+        }
+        .top_span{
+            color: #8d8b8b;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="Container" >
+        <p class="top_p"><span><i class="fa-solid fa-house"  ></i></span> -- Personal Account <span class="top_span" >--Account edit</span> </p>
+        <h1>ACCOUNT EDIT</h1>
+        <div>
+        <section id="left_sec" >
+            <div >
+                <span><i class="fa-regular fa-circle-user"></i></span>
+                <p>PERSONAL INFORMATION</p>
+            </div>
+            <div  >
+                <span><i class="fa-solid fa-cart-shopping"  ></i></span>
+                <p>MY ORDERS</p>
+            </div>
+            <div class="orenge3" >
+                <span><i class="fa-regular fa-heart" ></i></span>
+                <p>WISH LIST</p>
+            </div>
+            <div   >
+                <span><i class="fa-regular fa-credit-card" ></i></span>
+                <p>PAYMENT CARDS</p>
+            </div>
+            <div   >
+                <span><i class="fa-light fa-gift" ></i></span>
+                <p>COUPONS</p>
+            </div>
+            <div >
+                <span><i class="fa-regular fa-gear" ></i></span>
+                <p>SERVICE</p>
+            </div>
+            <div  >
+                <span><i class="fa-regular fa-message" ></i></span>
+                <p>FEEDBACK</p>
+            </div>
+        </section>
+        <section id="right_sec" >
+            <h1>MAIN PERSONAL INFO</h1>
+            <div>
+                <div class="top_change" >
+                    <p> <span><i class="fa-regular fa-pen-to-square" style="color: #595959;"></i></span> Change</p>
+                    <i class="fa-regular fa-trash-can" color="#050505"></i>
+
+                </div>
+                <div class="input_div">
+                    <div>
+                        <input type="text" placeholder="Enter your name">
+                        <input type="text" placeholder="Enter your email">
+                    </div>
+                    <div>
+                        <input type="date">
+                        <input type="text" placeholder="Enter your nick name" >
+                    </div>
+                    <div>
+                        <input type="text" placeholder="enter your mobile number">
+                        <div class="gander" >
+                            <button>
+                                Woman
+                            </button>
+                            <button>
+                                Man
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1>MY DELIVERY ADDRESS</h1>
+            <div>
+                <div  class="top_change">
+                    <p> <span><i class="fa-regular fa-pen-to-square" style="color: #595959;"></i></span> Change</p>
+                    <i class="fa-regular fa-trash-can" color="#050505"></i>
+                </div>
+                <div class="input_div" >
+                    <div>
+                        <input type="text" placeholder="Area">
+                        <input type="text" placeholder="street ">
+                    </div>
+                    <div>
+
+                        <input type="text" placeholder="House No.">
+                        <input type="text" placeholder="">
+
+                    </div>
+                </div>
+            </div>
+
+            <h1>MY PASSWORD</h1>
+            <div>
+            <div class="top_change">
+                <p> <span><i class="fa-regular fa-pen-to-square" style="color: #595959;"></i></span> Change</p>
+               
+            </div>
+            <div class="Password_div" >
+                <input type="password" placeholder="password">
+                <input type="text" placeholder="confirm password">
+            </div>
+        </div>
+        </section>
+
+    </div>
+</div>
+</body>
+ 
+
+<script>
+    
+    const leftSecDivs = document.querySelectorAll('#left_sec div');
+
+    
+    leftSecDivs.forEach(div => {
+        div.addEventListener('click', () => {
+             
+            leftSecDivs.forEach(div => {
+                console.log(div);
+                div.style.color = '#a29f9f'; 
+            });
+
+             
+            div.style.color = 'orange';
+        });
+    });
+</script>
+</html>
+
+</html>
