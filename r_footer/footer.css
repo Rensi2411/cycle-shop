@@ -4,7 +4,7 @@
     font-family: 'Roboto', sans-serif;
     cursor: pointer;
 }
-body{
+.foot{
     background-color: black;
     color: white;
 }
@@ -39,15 +39,18 @@ body{
    padding-right: 50px;
    line-height: 25px;
 }
-input{
+.inp{
     padding: 10px;
-    border: 2px solid grey;
+    border: 1px solid grey;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
-button{
+.btn-1{
     padding: 10px;
     border: 2px solid grey;
+    background-color: grey;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }

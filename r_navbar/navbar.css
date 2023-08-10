@@ -2,9 +2,8 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    cursor: pointer;
 }
-body{
+.head{
     background-color: black;
     color: white;
 }

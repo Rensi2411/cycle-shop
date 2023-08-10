@@ -1,5 +1,6 @@
 function footer (){
-    return ` <div class="fo">
+    return ` <div class="foot">
+    <div class="fo">
     <div class="fo-1">
         <div class="fo-1a">
             <img src="https://i.pinimg.com/originals/db/12/20/db122066a33621a40e3783f69e2477d2.jpg" alt="logo">
@@ -63,8 +64,8 @@ function footer (){
         <div class="fo-3a">
             <h3>NEWSLETTER</h3>
             <div class="fo-3a1">
-                <input type="text"placeholder="Join our newsletter">
-                <button>JOIN</button>
+                <input type="text"placeholder="Join our newsletter"class="inp">
+                <button class="btn-1">JOIN</button>
             </div>
         </div>
         <div class="fo-3b">
@@ -75,6 +76,7 @@ function footer (){
 <div class="fo-4">
     <i class="fa-regular fa-copyright" style="color: #ecedef;"></i>
     <h4>1997 - 2022. Specialized Bicycle Components, inc.All Rights Reserved</h4>
+</div>
 </div>`
 }
 export default footer;

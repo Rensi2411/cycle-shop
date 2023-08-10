@@ -1,5 +1,6 @@
-function footer (){
-    return `<div class="nav-a">
+function navbar (){
+    return `<div class = "head">
+    <div class="nav-a">
     <div class="nav-a1">
         <img src="https://i.pinimg.com/originals/db/12/20/db122066a33621a40e3783f69e2477d2.jpg" alt="logo">
     </div>
@@ -30,6 +31,7 @@ function footer (){
         <p>Payment</p>
         <p style="margin-right: 30px;">Contact</p>
     </div>
+</div>
 </div>`
 }
-export default footer;
+export default navbar;
