@@ -7,6 +7,7 @@ let lastName = document.querySelector("#last_name");
 let create_btn = document.querySelector("#btn");
 let Acc_data=JSON.parse(localStorage.getItem("acc_data")) || [];
 
+
 create_btn.addEventListener("click", function () {
   var acc_obj = {
     Email: email.value,

@@ -14,6 +14,7 @@
  
                 if(element.Email === email.value){
                     
+                    
                     if(element.Password === password.value){
                        alert("login successfully");
                        //window.location.assign("./home.html")
