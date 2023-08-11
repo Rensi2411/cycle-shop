@@ -5,42 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up</title>
     <link rel="stylesheet" href="./style.css" />
+    <style>
+      .Alert_Box {
+        height: 48px;
+        -webkit-box-align: center;
+        align-items: center;
+        background-color: rgb(240, 93, 93);
+        border-color: rgb(255, 90, 96);
+        border-radius: 4px;
+        border-style: solid;
+        border-width: 1px;
+        color: rgb(37, 37, 37);
+        display: flex;
+        font-family: Helvetica;  
+        padding-left: 20px;
+      }
+
+    </style>
   </head>
   <body>
-
-    
-  <div id="registration">
-    
-    <div id="regi_child">
+    <div id="registration">
+      <div id="regi_child">
         <h3>Create an Account</h3>
+          
+        <div id="alert"> 
+
+        </div>
+        <br />
         <input type="email" class="input_ele" placeholder="Email" id="email" />
         <br />
         <br />
         <br />
-        <input
-          type="password"
-          class="input_ele"
-          placeholder="Password"
-          id="password"
-        />
+        <input type="password" class="input_ele" placeholder="Password" id="password"/>
         <br />
         <br />
         <br />
-        <input
-          type="text"
-          class="input_ele"
-          placeholder="First Name"
-          id="first_name"
-        />
-        <br />
-        <br />
-        <br />
-        <input
-          type="text"
-          class="input_ele"
-          placeholder="Last Name"
-          id="last_name"
-        />
+        <input type="text" class="input_ele" placeholder="First Name" id="first_name" />
+        
         <br />
         <br />
         <div class="checkbox_div">
@@ -52,19 +53,14 @@
           <input type="checkbox" class="chkbox" />
           <span
             >I accept the
-            <a  target="_blank"
-              >Specialized Terms &amp; Conditions</a
-            ></span
+            <a target="_blank">Specialized Terms &amp; Conditions</a></span
           >
         </div>
         <br />
         <div class="checkbox_div">
           <input type="checkbox" class="chkbox" />
           <span
-            >I accept the
-            <a  target="_blank"
-              >Specialized Terms of Use</a
-            ></span
+            >I accept the <a target="_blank">Specialized Terms of Use</a></span
           >
         </div>
         <br />
@@ -83,13 +79,12 @@
           </p>
         </div>
         <br />
-
+      </div>
     </div>
-  </div>
   </body>
 </html>
 
-<script src="./signup.js">
-  
-</script>
+<script type="module" src="./signup.js">
 
+
+</script>

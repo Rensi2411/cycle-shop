@@ -12,6 +12,21 @@
                 display: block;              
             }
         }
+
+        .Alert_Box {
+          height: 48px;
+          -webkit-box-align: center;
+          align-items: center;
+          background-color: rgb(240, 93, 93);
+          border-color: rgb(255, 90, 96);
+          border-radius: 4px;
+          border-style: solid;
+          border-width: 1px;
+          color: rgb(37, 37, 37);
+          display: flex;
+          font-family: Helvetica; 
+          padding-left: 20px;     
+        }
     </style>
 </head>
 <body>
@@ -19,6 +34,10 @@
         <div id="regi_child">
   
              <h3>Sign in to your Account</h3>
+             <div id="alert">
+
+             </div>
+             <br />
              <input type="email" id="email" placeholder="Email" />
              <br/>
              <br/>
@@ -41,7 +60,7 @@
              <div id="policy">I accept the Specialized <a target="_blank">Terms of Use</a> and acknowledge Specialized will use my information in accordance with its <a target="_blank">Privacy Policy</a>.</div>
              <br/>
              <br/>  
-             <button id="btn">Sign In</button>
+             <button id="signInbtn">Sign In</button>
              <br/>
              <div id="login_nav">
                    <a href="./signup.html">Create Account</a>      
@@ -64,8 +83,6 @@
       </div>
 </body>
 </html>
-<script src="./login.js">
-    
-
+<script type="module" src="./login.js">
     
 </script>
