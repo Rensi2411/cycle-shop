@@ -34,6 +34,7 @@ body{
 .hom-2b img{
     width: 100%;
     height: 100%;
+    border-radius: 20px;
 }
 .hom-3b img , .hom-5b img , .hom-6 img{
     width: 100%;
@@ -42,6 +43,7 @@ body{
 .hom-4b img{
     width: 30%;
     height: 100%;
+    border-radius: 20px;
 }
 
 

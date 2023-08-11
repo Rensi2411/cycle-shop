@@ -35,10 +35,54 @@ input{
     gap: 30px;
     align-items: center;
 }
+
 .nav-b1{
     display: flex;
     float: right;
     gap: 50px;
-    color: rgb(165, 164, 164);
+    /* display:inline-flex; */
+    align-items: center;
+    width: 100%;
     margin-top: 10px;
-}
+  }
+  .nav-b1 p{
+    font-size: 18px;
+    padding: 0px 22px;
+    color: rgb(165, 164, 164);
+  }
+  @media screen and (max-width: 1199px) {
+    .nav-b1{
+       display: inline-flex;
+        overflow-y: scroll;
+        white-space: nowrap;
+        width: 100%;
+        z-index: 3;
+        margin: 0;
+        padding: 0;
+    
+    }
+    .nav-b1 p{
+      padding: 22px;
+      font-size: 17px;
+    }
+    .nav-b1::-webkit-scrollbar{
+      display: none;
+    }
+    
+    }
+    @media screen and (max-width: 1033px) {
+        .nav-b1{
+              display: inline-flex;
+              overflow-y: scroll;
+              white-space: nowrap;
+              width: 100%;
+              z-index: 3;
+              margin: 0;
+              padding: 0;
+            
+            }
+            .nav-b1 p{
+            padding: 10px;
+            font-size: 15px;
+            }
+    }

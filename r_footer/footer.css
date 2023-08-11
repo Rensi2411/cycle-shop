@@ -28,7 +28,8 @@
 }
 .fo-2{
     line-height: 40px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
     gap: 20px;
     font-size: 13px;
     padding-left: -500px;
@@ -69,6 +70,12 @@ a{
     justify-content: center;
     margin-top: 30px;
 }
+@media screen and (max-width: 1050px){
+    .fo-2{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+}
 @media screen and (max-width: 1000px) {
     .fo-4{
         display: flex;
@@ -76,4 +83,23 @@ a{
         width: 120%;
     }
 }
-
+@media screen and (max-width: 915px){
+    .fo-2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width: 720px){
+    .fo{
+        display: block;
+        margin-left: 20px;
+    }
+    .fo-4{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 320px){
+    .fo-3a1{
+        margin-left: -50px;
+    }
+}
