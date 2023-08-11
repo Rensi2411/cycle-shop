@@ -86,3 +86,373 @@ input{
             font-size: 15px;
             }
     }
+
+
+
+
+
+
+
+
+
+
+
+
+    .nav2{
+        display: flex;
+        justify-content: space-around;
+        height: 50px;
+        margin: 0px -8px;
+        position: relative;
+        z-index: 99;
+      }
+     
+      .nav2-1{
+          margin: 15px 0px 12px 0px;
+      }
+      .nav2-1 a{
+        margin: 0px 10px;
+        text-decoration: none;
+        color: white;
+      }
+      .nav2-1 a ,nav2-2 a:hover{
+        cursor: pointer;
+      }
+      .nav2-2{
+        margin: 7px 0px 0px 0px;
+      }
+      input{
+        /* font-size: 12px; */
+        /* padding: 12px 5px 9px 5px; */
+        width: 237px;
+        padding: 5px;
+        border-radius: 10px;
+        background-color: black;
+        border: 1.4px solid white;
+        color: white;
+      }
+      .nav2-2 a{
+        font-size: 18px;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        margin: 0px 2px 0px 2px;
+      }
+
+
+
+
+      
+nav{
+    z-index: 99;
+    width: 100%;
+    }
+    nav .wrappe{
+    position: relative;
+    margin: -16px 0px 0px -190px ;
+    }
+    .wrappe .logo a{
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    }
+    .wrappe .nav-links{
+    display: inline-flex;
+    white-space: nowrap;
+    padding: 0px 0px 0px 160px;
+    }
+    .nav-links li{
+    list-style: none;
+    margin-top: 15px;
+    }
+    .nav-links li a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 9px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    }
+    .mega-links li a{
+    color: rgb(202, 201, 201);
+    }
+    .nav-links .mobile-item{
+    display: none;
+    }
+    .nav-links li:hover .mega-box{
+    transition: all 0.3s ease;
+    top: 52px;
+    opacity: 1;
+    visibility: visible;
+    }
+    .mega-box{
+    position: absolute;
+    width: 100%;
+    padding: 0 30px;
+    top: 85px;
+    opacity: 0;
+    visibility: hidden;
+    
+    }
+    .mega-box .content{
+    position: fixed;
+    padding: 0px 20px;
+    display: flex;
+    width: 10%;
+    background-color: rgb(16, 11, 11);
+    border: 1px solid rgb(209, 213, 213);
+    z-index: 1;
+    }
+    .mega-box .content .row{
+    width: calc(25% - 30px);
+    line-height: 45px;
+    }
+    .content .row img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+    .content .row header{
+    font-size: 20px;
+    font-weight: 500;
+    }
+    .content .row .mega-links{
+    margin-left: -40px;
+    }
+    .row .mega-links li{
+    padding: 0 20px;
+    }
+    .row .mega-links li a{
+    padding: 0px;
+    padding: 0 20px;
+    font-size: 17px;
+    display: block;
+    }
+    .desktop-item:hover{
+    border-bottom: 4px solid rgb(163, 159, 159);
+    }
+    .wrappe .btn{
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    }
+    .wrappe .btn.close-btn{
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    }
+    .oologo img{
+    display: none;
+    }
+    #username_text{
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    margin: 0px;
+    }
+    #logout_text{
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    font-size: 15px;
+    margin: 0px 2px;
+    padding: 3px;
+    }
+    
+    @media screen and (max-width: 1199px){
+    
+    }
+    @media screen and (max-width: 1199px) {
+    .nav3{
+      display: inline-flex;
+        overflow-y: scroll;
+        white-space: nowrap;
+        width: 100%;
+        z-index: 3;
+        margin: 0;
+        padding: 0;
+    
+    }
+    .nav3 a{
+      padding: 22px;
+      font-size: 17px;
+    }
+    .nav3::-webkit-scrollbar{
+      display: none;
+    }
+    
+    }
+    @media screen and (max-width: 1066px) {
+    .nav2-2 input ,.nav2-2 span{
+    display: none;
+    }
+    .wrappe .btn{
+      display: block;
+      margin: 12px 0px 0px 50px;
+     
+    }
+    .bewa{
+      display: none;
+    }
+    
+    .wrappe .nav-links{
+      position: fixed;
+      height: 100vh;
+      width: 100%;
+      max-width: 350px;
+      top: 0;
+      left: -100%;
+      display: block;
+      padding: 50px 10px;
+      line-height: 50px;
+      overflow-y: auto;
+      transition: all 0.3s ease;
+      z-index: 1;
+    }
+    
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    #menu-btn:checked ~ .nav-links{
+      left: 0%;
+      background-color: rgb(7, 6, 6);
+      
+    }
+    .mega-box .content{
+        border: 0;
+    }
+    #menu-btn:checked ~ .btn.menu-btn{
+      display: none;
+    }
+    #close-btn:checked ~ .btn.menu-btn{
+      display: block;
+    }
+    .nav-links li{
+      margin: 15px 10px;
+    }
+    .nav-links li a{
+      padding: 0 20px;
+      display: block;
+      font-size: 20px;
+    }
+    #showMega:checked ~ .mega-box{
+      max-height: 100%;
+    }
+    .nav-links .desktop-item{
+      display: none;
+    }
+    .nav-links .mobile-item{
+      display: block;
+      font-size: 20px;
+      font-weight: 500;
+      padding-left: 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+    
+    .mega-box{
+      position: static;
+      top: 65px;
+      opacity: 1;
+      visibility: visible;
+      padding: 0 20px;
+      max-height: 0px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+    .mega-box .content{
+      position: static;
+      box-shadow: none;
+      flex-direction: column;
+      padding: 20px 20px 0 20px;
+    }
+    .mega-box .content .row{
+      width: 100%;
+      margin-bottom: 15px;
+      /* border-top: 1px solid rgba(255,255,255,0.08); */
+    }
+    .mega-box .content .row:nth-child(1),
+    .mega-box .content .row:nth-child(2){
+      border-top: 0px;
+    }
+    .content .row .mega-links{
+      border-left: 0px;
+      padding-left: 15px;
+    }
+    .row .mega-links li{
+      margin: 0;
+    }
+    .content .row header{
+      font-size: 19px;
+    }
+    .nav1{
+      display: none;
+    }
+    .oologo img{
+    display: block;
+    margin: -24px 0px 0px -100px;
+    width: 20%;
+    
+    }
+    .nav3{
+    display: inline-flex;
+      overflow-y: scroll;
+      white-space: nowrap;
+      width: 100%;
+      z-index: 3;
+      margin: 0;
+      padding: 0;
+    
+    }
+    .nav3 a{
+    padding: 10px;
+    font-size: 15px;
+    }
+    }
+    nav input{
+    display: none;
+    }
+    
+    
+    @media screen and (max-width: 800px) {
+    .wrappe .btn{
+      display: block;
+      margin: 12px 0px 0px 100px;
+    }
+    .oologo img{
+      display: block;
+      margin: -24px 0px 0px -65px;
+      width: 20%;
+    }
+    
+    }
+    @media only screen and (max-width: 600px) {
+    
+    .wrappe .btn{
+      display: block;
+      margin: 12px 0px 0px 150px;
+    }
+    .oologo img{
+      display: block;
+      margin: -24px 0px 0px -15px;
+      width: 20%;
+    }
+    #abcd{
+        display: none;
+    }
+    .nav2-2{
+        margin-left: -250px;
+    }
+    }
+    @media only screen and (max-width: 400px) {
+    
+    .wrappe .btn{
+    display: block;
+    margin: 12px 0px 0px 200px;
+    }
+    .oologo img{
+    display: block;
+    margin: -24px 0px 0px 33px;
+    width: 20%;
+    }
+    }
+    
+    
