@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myorders</title>
+    <script src="https://kit.fontawesome.com/eed82eddcd.js" crossorigin="anonymous"></script>  
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            background-color: #414040;
+            
+        }
+        .Container{
+             
+            padding: 3rem 10rem;
+        }
+        .Container >div{
+   display: flex;
+   gap: 3rem;
+   justify-content:space-between;
+  
+
+        }
+        #left_sec{
+            flex: .5;
+       
+        }
+        #left_sec>div{
+            display: flex;
+        align-items: center;
+        gap: .4rem;
+        cursor: pointer;
+            padding: .8rem .2rem;
+            padding-right: 3rem;
+            border-bottom: 1px solid gray;
+            color: #a29f9f;
+            font-weight: 600;
+        }
+        
+        #left_sec>div i{
+            font-size: 25px;
+             
+        }
+       #right_sec{
+        padding: .2rem 2rem;
+        
+        flex: .8;
+        color: #fff;
+       }
+         
+       
+        
+        
+        .Container>div{
+            margin-top: 2rem;
+        }
+        
+         
+        
+        #save_btn{
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: .8rem 1.2rem;
+            background-color: #EB001B;
+color: #fff;
+border-radius: 5px;
+  margin-left: 50%;
+  transform: translate(-50%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="Container" >
+        <p class="top_p"><span><i class="fa-solid fa-house"  ></i></span> -- Personal Account <span class="top_span" >--My Orders</span> </p>
+        <h1>MY ORDER</h1>
+        <div>
+        <section id="left_sec" >
+            <div >
+                <span><i class="fa-regular fa-circle-user"></i></span>
+                <p>PERSONAL INFORMATION</p>
+            </div>
+            <div  >
+                <span><i class="fa-solid fa-cart-shopping"  ></i></span>
+                <p>MY ORDERS</p>
+            </div>
+            <div class="orenge3" >
+                <span><i class="fa-regular fa-heart" ></i></span>
+                <p>WISH LIST</p>
+            </div>
+            <div   >
+                <span><i class="fa-regular fa-credit-card" ></i></span>
+                <p>PAYMENT CARDS</p>
+            </div>
+            <div   >
+                <span><i class="fa-light fa-gift" ></i></span>
+                <p>COUPONS</p>
+            </div>
+            <div >
+                <span><i class="fa-regular fa-gear" ></i></span>
+                <p>SERVICE</p>
+            </div>
+            <div  >
+                <span><i class="fa-regular fa-message" ></i></span>
+                <p>FEEDBACK</p>
+            </div>
+        </section>
+        <section id="right_sec" >
+        <div>
+           <button>ALL</button> 
+           <button>IN PROCESS</button>
+           <button>COMPLETED</button>
+           <button>CANCELED</button> 
+        </div>
+        <div>
+            <div>
+                <h3>ORDER #<span id="order_id"></span></h3>
+                <p id="date_time"></p>
+            </div>
+            <div>
+                <div>
+                    <p>ORDER AMOUNT: $<span id="order_amount"></span></p>
+                    <p>DELIVERY METHOD: <span id="delivery_method"></span></p>
+                    <p>PAYMENT METHOD: <span id="payment_method"></span></p>
+                    <p>ORDER STATUS: <span id="order_status"></span></p>
+                </div>
+                <div></div>
+            </div>
+        </div>
+        <div></div>
+            
+        <button id="save_btn">CANCEL</button>
+        </section>
+       
+    </div>
+</div>
+</body>
+ 
+
+<script>
+    
+    const leftSecDivs = document.querySelectorAll('#left_sec div');
+
+    
+    leftSecDivs.forEach(div => {
+        div.addEventListener('click', () => {
+             
+            leftSecDivs.forEach(div => {
+                console.log(div);
+                div.style.color = '#a29f9f'; 
+            });
+
+             
+            div.style.color = 'orange';
+        });
+    });
+</script>
+</html>
+
+</html>

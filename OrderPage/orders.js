@@ -1,61 +1,73 @@
 const orderItems = [
   {
+    id:1,
     image:
       "https://d2f9uwgpmber13.cloudfront.net/public/uploads/mobile/d0afa1adbfd78cdb8f47d6f48c23ea35",
     title: "BLACK ARROW 700C 7-SPEED - WHITE ORANGE",
-    price: 22222,
-    
+    price: 20,
   },
   {
+    id:2,
     image:
       "https://d2f9uwgpmber13.cloudfront.net/public/uploads/mobile/d0afa1adbfd78cdb8f47d6f48c23ea35",
     title: "BLACK ARROW 700C 7-SPEED - WHITE ORANGE",
-    price: 22222,
+    price: 20,
   },
   {
+    id:3,
     image:
       "https://d2f9uwgpmber13.cloudfront.net/public/uploads/mobile/d0afa1adbfd78cdb8f47d6f48c23ea35",
     title: "BLACK ARROW 700C 7-SPEED - WHITE ORANGE",
-    price: 22222,
+    price: 20,
   },
   {
+    id:4,
     image:
       "https://d2f9uwgpmber13.cloudfront.net/public/uploads/mobile/d0afa1adbfd78cdb8f47d6f48c23ea35",
     title: "BLACK ARROW 700C 7-SPEED - WHITE ORANGE",
-    price: 22222,
+    price: 20,
   },
   {
+    id:5,
     image:
       "https://d2f9uwgpmber13.cloudfront.net/public/uploads/mobile/d0afa1adbfd78cdb8f47d6f48c23ea35",
     title: "BLACK ARROW 700C 7-SPEED - WHITE ORANGE",
-    price: 22222,
+    price: 20,
   },
   {
+    id:6,
     image:
       "https://d2f9uwgpmber13.cloudfront.net/public/uploads/mobile/d0afa1adbfd78cdb8f47d6f48c23ea35",
     title: "BLACK ARROW 700C 7-SPEED - WHITE ORANGE",
-    price: 22222,
+    price: 20,
   },
   {
+    id:7,
     image:
       "https://d2f9uwgpmber13.cloudfront.net/public/uploads/mobile/d0afa1adbfd78cdb8f47d6f48c23ea35",
     title: "BLACK ARROW 700C 7-SPEED - WHITE ORANGE",
-    price: 22222,
+    price: 20,
   },
   {
+    id:8,
     image:
       "https://d2f9uwgpmber13.cloudfront.net/public/uploads/mobile/d0afa1adbfd78cdb8f47d6f48c23ea35",
     title: "BLACK ARROW 700C 7-SPEED - WHITE ORANGE",
-    price: 22222,
+    price: 20,
   },
 ];
+let total_amount = 0;
+
 displayOrders(orderItems);
+totalfind();
 function displayOrders(orderItems) {
-  orderItems.map((order) => {
+  document.querySelector(".orderItems").innerHTML = "";
+
+  orderItems.map((order, index) => {
     let card_div = document.createElement("div");
 
     let left_div = document.createElement("div");
-    left_div.className= "left_div"
+    left_div.className = "left_div";
     let orderimg = document.createElement("img");
     orderimg.src = order.image;
 
@@ -81,61 +93,99 @@ function displayOrders(orderItems) {
 
     let quan = 1;
 
+    let storedQuantity = localStorage.getItem(`quantity_${order.id}`);
+    if (storedQuantity !== null) {
+      quan = parseInt(storedQuantity);
+    }
+
     let quantitiy_p = document.createElement("p");
     quantitiy_p.textContent = `${Number(quan)}`;
-  
 
     let spaninc = document.createElement("span");
     spaninc.textContent = "＋";
+    spaninc.addEventListener("click", () => {
+      quan++;
+      quantitiy_p.textContent = `${Number(quan)}`;
+      totalOrderPrice.textContent = `$ ${quan * order.price}`;
+      total_amount += order.price;
+      totalfind();
+      localStorage.setItem(`quantity_${order.id}`, quan);
+    });
+
+    spandec.addEventListener("click", () => {
+      if (quan > 1) {
+        quan--;
+        quantitiy_p.textContent = `${Number(quan)}`;
+        totalOrderPrice.textContent = `$ ${quan * order.price}`;
+        total_amount -= order.price;
+        totalfind();
+        localStorage.setItem(`quantity_${order.id}`, quan);
+      }
+    });
+    total_amount += quan * order.price;
 
     quantitiy.append(spandec, quantitiy_p, spaninc);
 
     let totalOrderPrice = document.createElement("p");
 
-    totalOrderPrice.textContent = `$ ${quan*order.price}`;
+    totalOrderPrice.textContent = `$ ${quan * order.price}`;
 
     let DelIcon = document.createElement("i");
-    DelIcon.setAttribute("class","fa-regular fa-trash-can")
+    DelIcon.setAttribute("class", "fa-regular fa-trash-can");
     // DelIcon.setAttribute("class","");
-    DelIcon.style.color = "#050505"
- 
-    right_div.append(quantitiy,totalOrderPrice,DelIcon);
+    DelIcon.style.color = "#050505";
+    DelIcon.addEventListener("click", () => {
+      const itemIndex = orderItems.indexOf(order);
+      console.log(itemIndex, order);
+      orderItems.splice(itemIndex, 1);
+      console.log(itemIndex, order);
+      total_amount = 0;
+      displayOrders(orderItems);
+      totalfind();
+    });
+    right_div.append(quantitiy, totalOrderPrice, DelIcon);
 
-    card_div.append(left_div,right_div);
+    card_div.append(left_div, right_div);
 
-   document.querySelector(".orderItems").append(card_div)
+    document.querySelector(".orderItems").append(card_div);
   });
 }
 
+function totalfind() {
+  let preTotal = document.getElementById("pre_total");
+  let currentTotal = document.getElementById("current_total");
+
+  preTotal.textContent = `$${total_amount}`;
+
+  currentTotal.textContent = `$${total_amount * (90 / 100)}`;
+}
 
 displayrecommend(orderItems);
 
-function displayrecommend(orderItems){
-  orderItems.map((order)=>{
+function displayrecommend(orderItems) {
+  orderItems.map((order) => {
+    let card_div = document.createElement("div");
 
-    let card_div   = document.createElement("div");
-
-    let img_div  =  document.createElement("div")
-    let img  =  document.createElement("img")
+    let img_div = document.createElement("div");
+    let img = document.createElement("img");
     img.src = order.image;
 
     img_div.append(img);
 
-    let details_div  =  document.createElement("div")
-    let title  =  document.createElement("h5")
-     
-    title.textContent  =  order.title;
+    let details_div = document.createElement("div");
+    let title = document.createElement("h5");
 
-    let price  =  document.createElement("p")
+    title.textContent = order.title;
+
+    let price = document.createElement("p");
     price.textContent = `Price: $${order.price}`;
-    
+
     // <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
-    details_div.append(title,price)
-    
-    card_div.append(img_div,details_div);
-    document.querySelector(".recommend_div").append(card_div)
-   
-  })
+    details_div.append(title, price);
+
+    card_div.append(img_div, details_div);
+    document.querySelector(".recommend_div").append(card_div);
+  });
 }
 
 // JavaScript code for sliding the recommendation section
