@@ -15,7 +15,7 @@
         }
         .Container{
                          background-color: #414040;
-            padding: 3rem 10rem;
+            padding: 3rem 8rem;
         }
         .Container >div{
    display: flex;
@@ -71,9 +71,7 @@ border-radius: 5px;
   margin-left: 50%;
   transform: translate(-50%);
         }
-       #right_sec{
-        border: 1px solid red;
-       }
+       
        #statics{
         display: flex;
         justify-content: space-between;
@@ -86,23 +84,24 @@ border-radius: 5px;
         border: none;
         border-radius: 3px;
         font-weight: 600;
+        color: #9e9d9ddc;
        } 
        #statics>button:first-child{
         padding: .8rem 3rem;
-       
+       color: #000000;
     }
     #statics>button:nth-child(2){
         color: red;
     }
     #order_details{
-        border: 1px solid greenyellow;
+    
         display: flex;
         flex-direction: column;
-        gap: 3rem;
+        gap: 2rem;
         margin-bottom: 2.4rem;
     }
     #order_details>div:last-child{
-        border: 1px solid red;
+        
         display: flex;
         justify-content: space-between;
     }
@@ -138,13 +137,69 @@ border-radius: 5px;
     #delivery_detail img{
         width: 50px;
     }
+    #ordered_items{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+    }
+    #ordered_items img{
+        width: 100%;
+        border-radius: 4px;
+    }
+    #ordered_items>div{
+        background-color: #fff;
+        border-radius: 3px;
+        color: black;
+        padding: .7rem .8rem;
+        display: flex;
+        justify-content: center;
+        gap: .6rem;
+       
+    }
+   .left_div{
+    width: 40%;
+    border-radius: 4px;
+    border: 1px solid black;
+   }
+    
+    #ordered_items>div>div:last-child{
+        display: flex;
+        flex-direction: column;
+        gap: .3rem;
+    }
+    #orderitemsDiv{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+    #allAboutOrder p{
+display: flex;
+font-size: 14px;
+gap: 2rem;
+margin-bottom: .7rem;
+    }
+    #oderdetail2ndchild{
+
+        gap: .7rem;
+    }
+    .top_p{
+        color: #fff;
+    }
+    .top_p >span:nth-child(2){
+        color: #757575;
+    }
+    .Container>h1{
+        color: #fff;
+        margin-top: 1.3rem;
+    }
     </style>
 </head>
 
 <body>
 
     <div class="Container" >
-        <p class="top_p"><span><i class="fa-solid fa-house"  ></i></span> -- Personal Account <span class="top_span" >--My Orders</span> </p>
+        <p class="top_p"><span><i class="fa-solid fa-house"  ></i></span> -- Personal Account <span class="top_span" >-- My Orders</span> </p>
         <h1>MY ORDER</h1>
         <div>
         <section id="left_sec" >
@@ -186,15 +241,15 @@ border-radius: 5px;
         </div>
         <div id="order_details">
             <div>
-                <h3>ORDER #<span id="order_id"></span></h3>
+                <h3>ORDER &nbsp; #<span id="order_id"></span></h3>
                 <p id="date_time"></p>
             </div>
-            <div >
-                <div>
-                    <p>ORDER AMOUNT: $<span id="order_amount"></span></p>
-                    <p>DELIVERY METHOD: <span id="delivery_method"></span></p>
-                    <p>PAYMENT METHOD: <span id="payment_method"></span></p>
-                    <p>ORDER STATUS: <span id="order_status"></span></p>
+            <div id="oderdetail2ndchild" >
+                <div id="allAboutOrder" >
+                    <p>ORDER AMOUNT : <span id="order_amount"></span></p>
+                    <p>DELIVERY METHOD : <span>SELF DELIVERY</span> </p>
+                    <p>PAYMENT METHOD : <span> BY CARD ONLINE</span></p>
+                    <p>ORDER STATUS : <span>IN PROCESS</span> </p>
                 </div>
                 <div id="delivery_detail">
                     <div>
@@ -208,8 +263,8 @@ border-radius: 5px;
                 </div>
             </div>
         </div>
-        <div>
-            <h3>Order Contains <span></span></h3>
+        <div id="orderitemsDiv">
+            <h3>Order Contains <span id="total_items"></span></h3>
             <div id="ordered_items">
 
             </div>
@@ -240,6 +295,110 @@ border-radius: 5px;
             div.style.color = 'orange';
         });
     });
+
+
+ 
+    const orderItems = [
+  {
+    id:1,
+    image:
+      "https://d2f9uwgpmber13.cloudfront.net/public/uploads/mobile/d0afa1adbfd78cdb8f47d6f48c23ea35",
+    title: "BLACK ARROW 700C 7-SPEED - WHITE ORANGE",
+    price: 20,
+  },
+  {
+    id:2,
+    image:
+      "https://d2f9uwgpmber13.cloudfront.net/public/uploads/mobile/d0afa1adbfd78cdb8f47d6f48c23ea35",
+    title: "BLACK ARROW 700C 7-SPEED - WHITE ORANGE",
+    price: 20,
+  },
+  {
+    id:3,
+    image:
+      "https://d2f9uwgpmber13.cloudfront.net/public/uploads/mobile/d0afa1adbfd78cdb8f47d6f48c23ea35",
+    title: "BLACK ARROW 700C 7-SPEED - WHITE ORANGE",
+    price: 20,
+  },
+  {
+    id:4,
+    image:
+      "https://d2f9uwgpmber13.cloudfront.net/public/uploads/mobile/d0afa1adbfd78cdb8f47d6f48c23ea35",
+    title: "BLACK ARROW 700C 7-SPEED - WHITE ORANGE",
+    price: 20,
+  },
+  {
+    id:5,
+    image:
+      "https://d2f9uwgpmber13.cloudfront.net/public/uploads/mobile/d0afa1adbfd78cdb8f47d6f48c23ea35",
+    title: "BLACK ARROW 700C 7-SPEED - WHITE ORANGE",
+    price: 20,
+  },
+  {
+    id:6,
+    image:
+      "https://d2f9uwgpmber13.cloudfront.net/public/uploads/mobile/d0afa1adbfd78cdb8f47d6f48c23ea35",
+    title: "BLACK ARROW 700C 7-SPEED - WHITE ORANGE",
+    price: 20,
+  },
+  {
+    id:7,
+    image:
+      "https://d2f9uwgpmber13.cloudfront.net/public/uploads/mobile/d0afa1adbfd78cdb8f47d6f48c23ea35",
+    title: "BLACK ARROW 700C 7-SPEED - WHITE ORANGE",
+    price: 20,
+  },
+  {
+    id:8,
+    image:
+      "https://d2f9uwgpmber13.cloudfront.net/public/uploads/mobile/d0afa1adbfd78cdb8f47d6f48c23ea35",
+    title: "BLACK ARROW 700C 7-SPEED - WHITE ORANGE",
+    price: 20,
+  },
+];
+
+document.getElementById("total_items").textContent = orderItems.length
+document.getElementById("order_id").textContent =Math.floor(Math.random()*100000)
+
+document.getElementById("order_amount").textContent = `$ ${localStorage.getItem("totalAmount")}` 
+
+displayOrderItems(orderItems);
+
+function displayOrderItems(orderItems){
+
+ orderItems.map((order)=>{
+
+    let card_div = document.createElement("div");
+
+    let left_div = document.createElement("div");
+    left_div.className = "left_div";
+    let orderimg = document.createElement("img");
+    orderimg.src = order.image;
+    left_div.append(orderimg);
+
+    let details_div = document.createElement("div");
+
+    let title = document.createElement("h5");
+    title.textContent = order.title.slice(0,20);
+  
+   let quantity =  document.createElement("span");
+   let quan  =  localStorage.getItem(`quantity_${order.id}`) || 1;
+   quantity.textContent = `${quan} pc`
+
+    let price = document.createElement("p");
+    price.textContent = `$ ${quan*order.price}`;
+    
+
+    details_div.append(title,quantity, price);
+
+    card_div.append(left_div,details_div);
+    document.getElementById("ordered_items").append(card_div)
+ })
+
+
+}
+
+
 </script>
 </html>
 

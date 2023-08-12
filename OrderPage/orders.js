@@ -156,8 +156,9 @@ function totalfind() {
   let currentTotal = document.getElementById("current_total");
 
   preTotal.textContent = `$${total_amount}`;
-
-  currentTotal.textContent = `$${total_amount * (90 / 100)}`;
+  let final  = total_amount * (90 / 100)
+  currentTotal.textContent = `$${final}`;
+  localStorage.setItem("totalAmount",final)
 }
 
 displayrecommend(orderItems);
