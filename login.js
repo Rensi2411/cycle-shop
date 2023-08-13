@@ -38,15 +38,15 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebas
         const starCountRef = ref(db, "users/" + userId);
         onValue(starCountRef, (snapshot) => {
           const data = snapshot.val();
-          console.log(data);
+          //console.log(data);
         });
-        console.log(user);
+       
         parentAlert_div.innerHTML="";
         var successmsg="User Logged in Successfully";
         //alert("you are logged in");
-        
+        localStorage.setItem("Specialized_User",JSON.stringify(email));
         displayAlert(successmsg)
-
+        //console.log()
         setTimeout(() => {
           window.location.href="./signup.html";
         }, 1000);

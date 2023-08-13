@@ -95,6 +95,7 @@ document.querySelector("#btn").addEventListener("click", function (event) {
     else if(Message ==="Firebase: Error (auth/missing-password)."){
       alertMessage.textContent=`Missing password, Please enter valid password`; 
       //alert_div.backgroundColor="red"
+      
     }
     else if(Message ==="Firebase: Password should be at least 6 characters (auth/weak-password)."){
       alertMessage.textContent=`Password should be at least 6 characters`
