@@ -63,7 +63,7 @@ totalfind();
 function displayOrders(orderItems) {
   document.querySelector(".orderItems").innerHTML = "";
 
-  orderItems.map((order, index) => {
+  orderItems.map((order) => {
     let card_div = document.createElement("div");
 
     let left_div = document.createElement("div");
