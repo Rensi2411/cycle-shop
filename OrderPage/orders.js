@@ -204,3 +204,8 @@ leftArrow.addEventListener("click", () => {
 rightArrow.addEventListener("click", () => {
   recommendSection.scrollLeft += scrollAmount;
 });
+
+
+document.getElementById("makeOrder").addEventListener("click",()=>{
+  window.location.href="../AcountPage/account.html"
+})

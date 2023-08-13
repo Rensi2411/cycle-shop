@@ -10,11 +10,11 @@
         *{
             margin: 0;
             padding: 0;
-            background-color: #414040;
+           
             
         }
         .Container{
-             
+            background-color: #414040;
             padding: 3rem 10rem;
         }
         .Container >div{
@@ -120,6 +120,7 @@ border-radius: 5px;
   margin-left: 50%;
   transform: translate(-50%);
         }
+        
     </style>
 </head>
 
@@ -130,11 +131,11 @@ border-radius: 5px;
         <h1>ACCOUNT EDIT</h1>
         <div>
         <section id="left_sec" >
-            <div >
+            <div class="first_color">
                 <span><i class="fa-regular fa-circle-user"></i></span>
                 <p>PERSONAL INFORMATION</p>
             </div>
-            <div  >
+            <div id="myOrderClick">
                 <span><i class="fa-solid fa-cart-shopping"  ></i></span>
                 <p>MY ORDERS</p>
             </div>
@@ -142,7 +143,7 @@ border-radius: 5px;
                 <span><i class="fa-regular fa-heart" ></i></span>
                 <p>WISH LIST</p>
             </div>
-            <div   >
+            <div id="paymentClick" >
                 <span><i class="fa-regular fa-credit-card" ></i></span>
                 <p>PAYMENT CARDS</p>
             </div>
@@ -220,7 +221,7 @@ border-radius: 5px;
                 <input type="text" placeholder="confirm password">
             </div>
         </div>
-        <button id="save_btn">SAVE ALL CHANGES</button>
+        <button id="save_btn" >SAVE ALL CHANGES</button>
         </section>
        
     </div>
@@ -232,19 +233,37 @@ border-radius: 5px;
     
     const leftSecDivs = document.querySelectorAll('#left_sec div');
 
-    
+     document.querySelector(".first_color").style.color="orange"
     leftSecDivs.forEach(div => {
         div.addEventListener('click', () => {
              
             leftSecDivs.forEach(div => {
                 console.log(div);
                 div.style.color = '#a29f9f'; 
+             
             });
 
              
             div.style.color = 'orange';
         });
     });
+
+    document.getElementById("save_btn").addEventListener("click",()=>{
+        window.location.href = "../payment/payment.html"
+    })
+
+    document.querySelector(".first_color").addEventListener("click",()=>{
+        window.location.href = "./account.html"
+    })
+
+    document.querySelector("#myOrderClick").addEventListener("click",()=>{
+        window.location.href = "../myorder/myorder.html"
+    })
+    document.querySelector("#paymentClick").addEventListener("click",()=>{
+        window.location.href = "../payment/payment.html"
+    })
+
+
 </script>
 </html>
 

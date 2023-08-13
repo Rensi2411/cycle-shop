@@ -203,11 +203,11 @@ margin-bottom: .7rem;
         <h1>MY ORDER</h1>
         <div>
         <section id="left_sec" >
-            <div >
+            <div id="PersonalClick" >
                 <span><i class="fa-regular fa-circle-user"></i></span>
                 <p>PERSONAL INFORMATION</p>
             </div>
-            <div  >
+            <div class="first_color" >
                 <span><i class="fa-solid fa-cart-shopping"  ></i></span>
                 <p>MY ORDERS</p>
             </div>
@@ -215,7 +215,7 @@ margin-bottom: .7rem;
                 <span><i class="fa-regular fa-heart" ></i></span>
                 <p>WISH LIST</p>
             </div>
-            <div   >
+            <div id="paymentClick"  >
                 <span><i class="fa-regular fa-credit-card" ></i></span>
                 <p>PAYMENT CARDS</p>
             </div>
@@ -281,7 +281,7 @@ margin-bottom: .7rem;
 <script>
     
     const leftSecDivs = document.querySelectorAll('#left_sec div');
-
+    document.querySelector(".first_color").style.color="orange"
     
     leftSecDivs.forEach(div => {
         div.addEventListener('click', () => {
@@ -296,6 +296,12 @@ margin-bottom: .7rem;
         });
     });
 
+document.getElementById("PersonalClick").addEventListener("click",()=>{
+    window.location.href="../AcountPage/account.html"
+})
+document.getElementById("paymentClick").addEventListener("click",()=>{
+    window.location.href="../payment/payment.html"
+})
 
  
     const orderItems = [
@@ -394,9 +400,10 @@ function displayOrderItems(orderItems){
     card_div.append(left_div,details_div);
     document.getElementById("ordered_items").append(card_div)
  })
-
-
 }
+
+
+
 
 
 </script>
