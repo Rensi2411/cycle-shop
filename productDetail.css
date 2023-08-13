@@ -31,7 +31,24 @@ body {
 
 
 }
+@media screen and (max-width : 395px) {
 
+    .allImg{
+        display: none;
+    }
+    
+    .product_Detail{
+        display: inline-block;
+    }
+    .left_product_Detail {
+        width: 100%;
+    }
+    
+    .leftArrow,
+.rightArrow{
+        display: none;
+    }
+}
 .allImg img {
     width: 120px;
     height: 90px;
@@ -242,6 +259,28 @@ body {
     padding-left: 1%;
 }
 
+@media screen and (max-width: 395px) {
+
+    .right_produt_detail{
+        width: 100%;
+    }
+    .orderNow,
+    .wishlist,
+    .compare{
+        display: none;
+    }
+    .cartIcon{
+        width: 100% !important;
+        justify-content: center;
+    }
+    .previous_price{
+        display: none !important;
+    }
+    .current_price{
+        margin-top: 1%;
+    }
+    
+}
 .color_btn {
     height: 30px;
     width: 30px;
@@ -256,7 +295,7 @@ body {
     ;
 }
 
-.color_size {
+.color_size, .none_color_size {
     display: flex;
     gap: 30px;
 }
@@ -325,7 +364,7 @@ body {
     /* gap: 2%; */
 }
 
-.cartIcon{
+.cartIcon, .none_cartIcon{
     display: flex;
     align-items: center;
     border: 1px solid rgb(24, 21, 21);
@@ -511,8 +550,8 @@ body {
     background: linear-gradient(to bottom right,
             rgb(29, 28, 27) 0%,
             rgb(28, 27, 27) 20%,
-            rgb(14, 172, 207) 50%,
-            rgb(20, 171, 212) 100%) !important;
+            rgb(188, 23, 23) 50%,
+            rgb(161, 41, 14) 100%) !important;
 }
 .color_btn5{
     background: linear-gradient(to bottom right,
@@ -538,3 +577,102 @@ body {
     border-radius: 5px;
     cursor: pointer;
 }
+
+@media screen and (max-width : 395px) {
+    #bottom>div{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 8px;
+    }
+    .product_title,
+    .product-rating,
+    .color_size,
+    .product_price,
+    .Icons,
+    .Icons+hr,
+    .product_price+hr{
+        display: none;
+    }
+
+}
+
+@media screen and (min-width : 395px) {
+    #none{
+        display: none;
+    }
+}
+
+
+.none_color_size .size_btn{
+    display: flex;
+    width : 230px;
+    justify-content: space-between;
+    gap: 9px;
+}
+
+.none_color_size .size_btn .none_size_options{
+    width: 31%;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+.none_cartIcon{
+    width: 95%;
+    
+    margin: auto;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+/* Modal CSS */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    pointer-events: none;
+    z-index: 1; /* Ensure modal is above other content */
+    color: black;
+  }
+  
+  .modal.show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 2;
+    pointer-events: auto;
+  }
+  
+  .modal-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #f39c12;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  }
+  
+  .modal.show .modal-content {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  #closeModalBtn{
+    border-radius: 4px;
+    padding: 5px;
+    background-color: red;
+    border: none;
+    color: white;
+  }
+  
+  
+  /*Modal CSS ended here  */

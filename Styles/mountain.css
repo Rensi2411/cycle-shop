@@ -37,6 +37,13 @@ body{
     
 }
 
+@media screen and (max-width : 395px){
+    #functions{
+        display: none;
+        
+    }
+}
+
 .sub_box{
     display: flex;
     cursor: pointer;
@@ -173,6 +180,16 @@ body{
     grid-gap: 15px;
     width: 100%;
 }
+
+@media screen and (max-width : 395px){
+    #product_box{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    
+}
 .product_sub_box{
     /* width: 334px; */
     background-color: white;
@@ -180,6 +197,7 @@ body{
     padding: 10px;
     cursor: pointer;
     border-radius: 8px;
+    box-shadow: rgb(155, 157, 27) 0px 6px 6px 3px, rgba(83, 4, 172, 0.989) 0px 6px 6px;
 
 }
 
@@ -236,3 +254,11 @@ body{
 
 }
 
+@media screen and (max-width : 395px) {
+    #paginationButton{
+        width: 60%;
+        margin-top: 2%;
+    }
+
+    
+}

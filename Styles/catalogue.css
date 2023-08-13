@@ -23,7 +23,7 @@ body>p{
     margin-bottom: 60px;
 }
 
-@media screen and (max-width : 370px) {
+@media screen and (max-width : 395px) {
     #catalogue{
         grid-template-columns: repeat(1,1fr);
     }

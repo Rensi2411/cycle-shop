@@ -2,30 +2,7 @@ let totalpages;
 let limit = 12;
 let pageNum = 1;
 
-let filter = document.querySelector(".filter .sub_box");
 
-filter.addEventListener("click", () => {
-    let close = document.querySelector(".filter .close")
-    let expand = document.querySelector(".filter .expand");
-
-    let filter_popup = document.querySelector("#filter_popup_container");
-
-    if (close.style.display === "none") {
-
-
-        filter_popup.style.display = "inline-block";
-
-        close.style.display = "inline-block";
-        expand.style.display = "none";
-    }
-
-    else {
-        close.style.display = "none";
-        expand.style.display = "inline-block";
-
-        filter_popup.style.display = "none"
-    }
-})
 
 let category = document.querySelector(".category .sub_box");
 
@@ -365,6 +342,9 @@ async function displayMountainproducts() {
         var result = await response.json();
         fetchedData = result;
 
+        getCyclePagination(pageNum)
+
+
         result.forEach(function (element, index) {
             let previous_html = product_box.innerHTML;
 
@@ -424,28 +404,82 @@ function displayProducts(array) {
 }
 
 
+
 var sortButton = document.querySelector("#sort_options");
-sortButton.addEventListener("change", (event) => {
 
-    // console.log(temp)
-    if (event.target.value === "Price (High-Low)") {
-        result.sort((a, b) => b.price - a.price);
 
-        product_box.innerHTML = ""
-        displayProducts(result);
+sortButton.addEventListener("change", function () {
+    var sortValue = document.querySelector("#sort_options").value;
+
+    if (sortValue === "Default") {
+        // displayMountainproducts();
+        window.location.reload();
+
     }
-
-    else if (event.target.value === "Price (Low-High)") {
-        result.sort((a, b) => a.price - b.price);
-
-        product_box.innerHTML = ""
-        displayProducts(result);
+    else if (sortValue === "Price (High-Low)") {
+        console.log(fetchedData, "fetchedData")
+        var sorted = fetchedData.sort((a, b) => {
+            return b.price - a.price;
+        })
     }
-    else if (event.target.value === "Default") {
-        product_box.innerHTML = ""
-        displayMountainproducts()
+    else if (sortValue === "Price (Low-High)") {
+        var sorted = fetchedData.sort((b, a) => {
+            return b.price - a.price;
+        })
     }
+    // getCyclePagination(pageNum)
+    displayProducts(sorted)
+
 })
+
+
+// sort by category 
+
+var categoryFilter = document.querySelectorAll("#category_popup_container>p")
+
+
+
+
+
+
+categoryFilter.forEach((ele) => {
+    let cat = ele.textContent;
+    cat = cat.toLowerCase();
+    ele.addEventListener("click", function () {
+        let filteredArray = fetchedData.filter((element) => {
+            if (cat === "") {
+                return true
+            }
+            else {
+                return cat === element.category;
+            }
+        })
+
+
+        displayProducts(filteredArray);
+    })
+})
+
+
+var colorFilter = document.querySelectorAll("#color_popup_container>button")
+console.log(colorFilter)
+
+colorFilter.forEach((element) => {
+    let color = element.style.backgroundColor;
+    color = color.toLowerCase();
+    element.addEventListener("click", function () {
+
+
+        let filteredArray = fetchedData.filter((element) => {
+            return color === element.frame_colors[0].toLowerCase();
+        })
+        console.log(filteredArray)
+        displayProducts(filteredArray);
+    })
+
+})
+
+
 
 
 
@@ -474,33 +508,14 @@ setTimeout(getProduct, 1000)
 
 
 
-
-
-
-
-let category_options = document.querySelectorAll("#category_popup_container");
-
-category_options.forEach((element, index) => {
-    element.addEventListener("click", function (event) {
-
-
-
-        type = event.target.textContent;
-        console.log(type)
-
-
-    })
-})
-
-
 // pagination
 
 
 let prev = document.getElementById("prev")
 let next = document.getElementById("next")
-getWinesPagination(pageNum)
+getCyclePagination(pageNum)
 
-async function getWinesPagination(pageNum) {
+async function getCyclePagination(pageNum) {
     if (pageNum == 1) {
         prev.disabled = true
     }
@@ -538,7 +553,7 @@ prev.addEventListener("click", () => {
         return
     }
     pageNum--
-    getWinesPagination(pageNum)
+    getCyclePagination(pageNum)
 })
 
 
@@ -547,6 +562,6 @@ next.addEventListener("click", () => {
         return
     }
     pageNum++
-    getWinesPagination(pageNum)
+    getCyclePagination(pageNum)
 })
 ///////////
