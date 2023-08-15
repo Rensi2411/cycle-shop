@@ -1,0 +1,118 @@
+ 
+        *{
+            margin: 0;
+            padding: 0;
+           
+            
+        }
+        
+      
+        
+        .Container{
+            background-color: #414040;
+            padding: 3rem 10rem;
+        }
+        .Container >div{
+   display: flex;
+   gap: 3rem;
+   justify-content:space-between;
+  
+
+        }
+        #left_sec{
+            flex: .5;
+       
+        }
+        #left_sec>div{
+            display: flex;
+        align-items: center;
+        gap: .4rem;
+        cursor: pointer;
+            padding: .8rem .2rem;
+            padding-right: 3rem;
+            border-bottom: 1px solid gray;
+            color: #a29f9f;
+            font-weight: 600;
+        }
+        
+        #left_sec>div i{
+            font-size: 25px;
+             
+        }
+       #right_sec{
+        padding: .2rem 2rem;
+        
+        flex: .8;
+        color: #fff;
+       }
+        .top_change{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: .5rem;
+            color: #8d8b8b;
+            font-weight: 600;
+        }
+        #right_sec input{
+            background-color: #fff;
+            border: none;
+            outline: none;
+            padding: .7rem .5rem;
+            border-radius: 3px;
+            width: 100%;
+            font-weight: 600;
+        }
+        .input_div>div ,.Password_div{
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            margin-bottom: 1.3rem;
+        }
+        .gander{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: .5rem;
+            /* width: 100%; */
+        }
+        input::placeholder{
+            color: #a7a6a6bd;
+        }
+        .gander button{
+            background-color: #fff;
+            color: #000000;
+            border: none;
+            outline: none;
+            padding: .7rem .6rem;
+            border-radius: 3px;
+            padding-right: 4.6rem;
+
+        }
+        .Container>div{
+            margin-top: 2rem;
+        }
+        #right_sec>div{
+            margin-top: 1.5rem;
+        }
+        h1{
+            color: #fff;
+            margin-top: 1.4rem;
+        }
+        .top_p{
+            color: #fff;
+        }
+        .top_span{
+            color: #8d8b8b;
+        }
+        .save_btn{
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: .8rem 1.2rem;
+            background-color: #EB001B;
+color: #fff;
+border-radius: 5px;
+  margin-left: 50%;
+     transform: translate(-50%);
+        }
+        

@@ -5,129 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>accountpage</title>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
     <script src="https://kit.fontawesome.com/eed82eddcd.js" crossorigin="anonymous"></script>  
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-           
-            
-        }
-        .Container{
-            background-color: #414040;
-            padding: 3rem 10rem;
-        }
-        .Container >div{
-   display: flex;
-   gap: 3rem;
-   justify-content:space-between;
-  
-
-        }
-        #left_sec{
-            flex: .5;
-       
-        }
-        #left_sec>div{
-            display: flex;
-        align-items: center;
-        gap: .4rem;
-        cursor: pointer;
-            padding: .8rem .2rem;
-            padding-right: 3rem;
-            border-bottom: 1px solid gray;
-            color: #a29f9f;
-            font-weight: 600;
-        }
-        
-        #left_sec>div i{
-            font-size: 25px;
-             
-        }
-       #right_sec{
-        padding: .2rem 2rem;
-        
-        flex: .8;
-        color: #fff;
-       }
-        .top_change{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: .5rem;
-            color: #8d8b8b;
-            font-weight: 600;
-        }
-        #right_sec input{
-            background-color: #fff;
-            border: none;
-            outline: none;
-            padding: .7rem .5rem;
-            border-radius: 3px;
-            width: 100%;
-            font-weight: 600;
-        }
-        .input_div>div ,.Password_div{
-            display: flex;
-            justify-content: space-between;
-            gap: 1rem;
-            margin-bottom: 1.3rem;
-        }
-        .gander{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: .5rem;
-            /* width: 100%; */
-        }
-        input::placeholder{
-            color: #a7a6a6bd;
-        }
-        .gander button{
-            background-color: #fff;
-            color: #000000;
-            border: none;
-            outline: none;
-            padding: .7rem .6rem;
-            border-radius: 3px;
-            padding-right: 4.6rem;
-
-        }
-        .Container>div{
-            margin-top: 2rem;
-        }
-        #right_sec>div{
-            margin-top: 1.5rem;
-        }
-        h1{
-            color: #fff;
-            margin-top: 1.4rem;
-        }
-        .top_p{
-            color: #fff;
-        }
-        .top_span{
-            color: #8d8b8b;
-        }
-        #save_btn{
-            border: none;
-            outline: none;
-            cursor: pointer;
-            padding: .8rem 1.2rem;
-            background-color: #EB001B;
-color: #fff;
-border-radius: 5px;
-  margin-left: 50%;
-  transform: translate(-50%);
-        }
-        
-    </style>
+ 
+    <link rel="stylesheet" href="./account.css">
 </head>
 
 <body>
-
+    
     <div class="Container" >
-        <p class="top_p"><span><i class="fa-solid fa-house"  ></i></span> -- Personal Account <span class="top_span" >--Account edit</span> </p>
+        <p class="top_p"><span><i class="fa-solid fa-house"></i></span> -- Personal Account <span class="top_span" >--Account edit</span> </p>
         <h1>ACCOUNT EDIT</h1>
         <div>
         <section id="left_sec" >
@@ -160,8 +47,11 @@ border-radius: 5px;
                 <p>FEEDBACK</p>
             </div>
         </section>
+
         <section id="right_sec" >
             <h1>MAIN PERSONAL INFO</h1>
+         
+            <form id="accountForm">
             <div>
                 <div class="top_change" >
                     <p> <span><i class="fa-regular fa-pen-to-square" style="color: #595959;"></i></span> Change</p>
@@ -170,21 +60,21 @@ border-radius: 5px;
                 </div>
                 <div class="input_div">
                     <div>
-                        <input type="text" placeholder="Enter your name">
-                        <input type="text" placeholder="Enter your email">
+                        <input type="text" placeholder="FirstName"   required>
+                        <input type="text" placeholder="LastName"  required>
                     </div>
                     <div>
                         <input type="date">
-                        <input type="text" placeholder="Enter your nick name" >
+                        <input type="text" placeholder="Email" required >
                     </div>
                     <div>
-                        <input type="text" placeholder="enter your mobile number">
+                        <input type="text" placeholder="mobile number" required>
                         <div class="gander" >
-                            <button>
-                                Woman
+                            <button value="Women">
+                                Women
                             </button>
-                            <button>
-                                Man
+                            <button value="Men">
+                                Men
                             </button>
                         </div>
                     </div>
@@ -198,13 +88,13 @@ border-radius: 5px;
                 </div>
                 <div class="input_div" >
                     <div>
-                        <input type="text" placeholder="Area">
-                        <input type="text" placeholder="street ">
+                        <input type="text" placeholder="Area" required>
+                        <input type="text" placeholder="Street" required>
                     </div>
                     <div>
 
-                        <input type="text" placeholder="House No.">
-                        <input type="text" placeholder="">
+                        <input type="text" placeholder="House No." required>
+                        <input type="text" placeholder="City" required>
 
                     </div>
                 </div>
@@ -217,54 +107,25 @@ border-radius: 5px;
                
             </div>
             <div class="Password_div" >
-                <input type="password" placeholder="password">
-                <input type="text" placeholder="confirm password">
+                <input type="password" placeholder="password" required>
+                <input type="text" placeholder="confirm password" required>
             </div>
+            <div id="error-message" class="error-message"></div>
         </div>
-        <button id="save_btn" >SAVE ALL CHANGES</button>
+        <button id="rzp-button1" class="btn btn-outline-dark btn-lg save_btn"><i class="fas fa-money-bill"></i> SAVE ALL CHANGES</button>
+    </form>
+        <!-- <button id="save_btn" ></button> -->
         </section>
        
     </div>
 </div>
 </body>
  
-
-<script>
+<script src="./account.js">
     
-    const leftSecDivs = document.querySelectorAll('#left_sec div');
-
-     document.querySelector(".first_color").style.color="orange"
-    leftSecDivs.forEach(div => {
-        div.addEventListener('click', () => {
-             
-            leftSecDivs.forEach(div => {
-                console.log(div);
-                div.style.color = '#a29f9f'; 
-             
-            });
-
-             
-            div.style.color = 'orange';
-        });
-    });
-
-    document.getElementById("save_btn").addEventListener("click",()=>{
-        window.location.href = "../payment/payment.html"
-    })
-
-    document.querySelector(".first_color").addEventListener("click",()=>{
-        window.location.href = "./account.html"
-    })
-
-    document.querySelector("#myOrderClick").addEventListener("click",()=>{
-        window.location.href = "../myorder/myorder.html"
-    })
-    document.querySelector("#paymentClick").addEventListener("click",()=>{
-        window.location.href = "../payment/payment.html"
-    })
-
-
-</script>
+   
+  </script>
+ 
 </html>
 
 </html>
