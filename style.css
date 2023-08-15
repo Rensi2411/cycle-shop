@@ -86,14 +86,14 @@
     font-family: "DIN W01 Regular";
     color: rgb(245, 240, 240); 
   }
-  #regi_child button{
+  #signInbtn{
     width: 100%;
     border-style: solid;
     cursor: pointer;
     display: block;
     font-family: "DIN W01 Medium";
     line-height: inherit;
-    padding: 0px 16px;
+    padding: 16px 16px;
     position: relative;
     border-radius: 8px;
     font-size: 16px;
@@ -139,6 +139,9 @@
    }
    #btn,#signInbtn{
       height: 48px;
-      width: 112%;
+      width: 100%;
+   }
+   .checkbox_div {
+     display: block;
    }
   }
