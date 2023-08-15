@@ -141,7 +141,7 @@ function navbar (){
           
         <i class="fa-solid fa-magnifying-glass" style="color: #ffffff; margin: 0px 0px 0px 60px;"></i>
           <input type="search" placeholder="Search" >
-          <a href="signup.html" id="login_text" >Login</a>
+          <a href="../login.html" id="login_text" >Login</a>
           <span id="username_text"></span>
           
           <button id="logout_text">Logout</button>
@@ -159,7 +159,7 @@ function navbar (){
 
 <div class="nav-b">
     <div class="nav-b1">
-        <i class="fa-solid fa-location-dot" style="color: #e9a920;"></i>
+        <i class="fa-solid fa-location-dot"  id ="abcd" style="color: #e9a920;"></i>
         <p>About us</p>
         <p>Delivery</p>
         <p>Payment</p>

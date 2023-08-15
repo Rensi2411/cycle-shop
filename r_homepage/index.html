@@ -69,7 +69,7 @@
 
         let Namearr = JSON.parse(localStorage.getItem("Specialized_User"));
 
-        document.getElementById("username_text").innerText = Namearr;
+        document.getElementById("username_text").innerText = "admin";
         
 
         function handleLogout() {
@@ -83,7 +83,7 @@
 
         if (Namearr && Namearr.length > 0) {
         // User is logged in
-        let loggedInUser = Namearr[0].name;
+        let loggedInUser = "admin";
         document.getElementById("login_text").style.display = "none";
         document.getElementById("username_text").innerText = loggedInUser;
         document.getElementById("username_text").style.display = "inline";
@@ -98,6 +98,7 @@
         document.getElementById("username_text").style.display = "none";
         document.getElementById("logout_text").style.display = "none";
         }
+
 
     </script>
 </html>
