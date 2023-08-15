@@ -510,6 +510,15 @@
 
 
 <script type="module">
+    import navbar from "./r_navbar/navbar.js"
+    import footer from "./r_foooter/footer.js"
+
+    var nav = document.querySelector("#navbar")
+
+    nav.innerHTML = navbar();
+
+    var footerContainer = document.querySelector("#footer")
+    footerContainer.innerHTML = footer();
 
     console.log(screen.width)
     let size_options = document.querySelectorAll(".size_options")
@@ -643,12 +652,28 @@
     const modalContent = document.querySelector('.modal-content');
     const modalText = document.getElementById('modalText');
 
+ 
+
+    var cartProduct = {
+        img : "https://assets.specialized.com/i/specialized/90622-01_TARMAC-SL7-SW-DI2-REDTNT-METWHTSIL-BLK_FDSQ?bg=rgb(241,241,241)&w=1600&h=900&fmt=auto",
+        title : "Lifelong Conqueror Cycle",
+        prviousPrice : 15000.00,
+        discount : 30,
+        currentPrice : 10500,
+      }
+
     showModalBtn.addEventListener('click', () => {
-        // Your condition here
-        const conditionFulfilled = true; // Change this based on your actual condition
+       
+        if(localStorage.getItem("cartProduct")){
+            localStorage.removeItem("cartProduct")
+        }
+        else{
+            localStorage.setItem("cartProduct", JSON.stringify(cartProduct));
+        }
 
         if (checkSize()) {
             modalText.textContent = 'Item added to cart!';
+
             setTimeout(() => {
                 window.location.href = "./cart.html"
             }, 1500);

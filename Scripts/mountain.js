@@ -1,4 +1,15 @@
+import navbar from "./r_navbar/navbar.js"
+import footer from "./r_foooter/footer.js"
+
+var nav = document.querySelector("#navbar")
+
+nav.innerHTML = navbar();
+
+var footerContainer = document.querySelector("#footer")
+footerContainer.innerHTML = footer();
+
 let totalpages;
+
 let limit = 12;
 let pageNum = 1;
 
