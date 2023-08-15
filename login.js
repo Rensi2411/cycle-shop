@@ -44,11 +44,12 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebas
         parentAlert_div.innerHTML="";
         var successmsg="User Logged in Successfully";
         //alert("you are logged in");
+        
         localStorage.setItem("Specialized_User",JSON.stringify(email));
         displayAlert(successmsg)
         //console.log()
         setTimeout(() => {
-          window.location.href="./signup.html";
+          window.location.href="./index.html";
         }, 1000);
         
       
