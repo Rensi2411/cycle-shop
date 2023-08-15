@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myorders</title>
+    <script src="https://kit.fontawesome.com/eed82eddcd.js" crossorigin="anonymous"></script>  
+    
+    <link rel="stylesheet" href="./myorder.css">
+</head>
+
+<body>
+
+    <div class="Container" >
+        <p class="top_p"><span><i class="fa-solid fa-house"  ></i></span> -- Personal Account <span class="top_span" >-- My Orders</span> </p>
+        <h1>MY ORDER</h1>
+        <div>
+        <section id="left_sec" >
+            <div id="PersonalClick" >
+                <span><i class="fa-regular fa-circle-user"></i></span>
+                <p>PERSONAL INFORMATION</p>
+            </div>
+            <div class="first_color" >
+                <span><i class="fa-solid fa-cart-shopping"  ></i></span>
+                <p>MY ORDERS</p>
+            </div>
+            <div class="orenge3" >
+                <span><i class="fa-regular fa-heart" ></i></span>
+                <p>WISH LIST</p>
+            </div>
+            <div id="paymentClick"  >
+                <span><i class="fa-regular fa-credit-card" ></i></span>
+                <p>PAYMENT CARDS</p>
+            </div>
+            <div   >
+                <span><i class="fa-light fa-gift" ></i></span>
+                <p>COUPONS</p>
+            </div>
+            <div >
+                <span><i class="fa-regular fa-gear" ></i></span>
+                <p>SERVICE</p>
+            </div>
+            <div  >
+                <span><i class="fa-regular fa-message" ></i></span>
+                <p>FEEDBACK</p>
+            </div>
+        </section>
+        <section id="right_sec" >
+        <div id="statics" >
+           <button>ALL</button> 
+           <button id="progres">IN PROCESS</button>
+           <button>COMPLETED</button>
+           <button id="canceledbtn">CANCELED</button> 
+        </div>
+        <div id="order_details">
+            <div>
+                <h3>ORDER &nbsp; #<span id="order_id"></span></h3>
+                <p id="date_time"></p>
+            </div>
+            <div id="oderdetail2ndchild" >
+                <div id="allAboutOrder" >
+                    <p>ORDER AMOUNT : <span id="order_amount"></span></p>
+                    <p>DELIVERY METHOD : <span>SELF DELIVERY</span> </p>
+                    <p>PAYMENT METHOD : <span> BY CARD ONLINE</span></p>
+                    <p>ORDER STATUS : <span>IN PROCESS</span> </p>
+                </div>
+                <div id="delivery_detail">
+                    <div>
+                        <img src="../tempo.png" alt="">
+                        <p>DELIVERY DETAILS</p>
+                    </div>
+                    <span>Self delivery from Specialized Store</span>
+                    <h5>
+                    pick up tommorrow 10:00 am to 18:00 pm
+                    </h5>
+                </div>
+            </div>
+        </div>
+        <div id="orderitemsDiv">
+            <h3>Order Contains <span id="total_items"></span></h3>
+            <div id="ordered_items">
+
+            </div>
+        </div>
+        <div id="cancelCard" class="cancel-card">
+            <p>Your order has been canceled.</p>
+    <p>You will be redirected to the homepage in  <span id="countdown">5</span> seconds...</p>
+        </div>
+        <button id="save_btn" >CANCEL</button>
+         
+        </section>
+       
+    </div>
+</div>
+</body>
+ 
+<script src="./myorder.js"></script>
+ 
+</html>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OrderPage</title>
+  <script src="https://kit.fontawesome.com/eed82eddcd.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="./order.css">
+ 
+</head>
+
+<body>
+  <div class="orderpage_Container">
+    <p> <span><i class="fa-solid fa-house" style="color: #ffffff;"></i></span> -- Your Order</p>
+    <section>
+      <h1>YOUR ORDER</h1>
+      <div class="orderItems">
+
+      </div>
+    </section>
+
+    <section class="recommend_section">
+      <h3>WE RECOMMEND</h3>
+
+      <i class="fa-solid fa-chevron-left" style="color: #000000;"></i>
+
+      <div class="recommend_div">
+
+      </div>
+
+      <i class="fa-solid fa-chevron-right" style="color: #000000;"></i>
+
+    </section>
+    <section id="bottom_section">
+      <div class="delevry_details">
+        <div> <img src="../tempo.png" alt="">
+          <h5>FAST DELIVERY</h5>
+          <P>We will deliver your order within 48 hours </P>
+        </div>
+        <div>
+          <i class="fa-solid fa-gear" style="color: #000000;"></i>
+          <div>
+            <h5>IMPECCABLE SERVICE</h5>
+            <p>We will help you to assemble the bike after delivery</p>
+          </div>
+        </div>
+        <div>
+          <i id="credit" class="fa-regular fa-credit-card" style="color: #000000;"></i>
+          <h5>SECURE PAYMENT</h5>
+          <P>We use 3d-secure to protect all payments</P>
+        </div>
+      </div>
+      <div class="total_amount">
+        <h3>TOTAL:</h3>
+        <div>
+          <p id="pre_total"></p>
+          <p id="current_total"></p>
+          <button id="makeOrder" >MAKE AN ORDER</button>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="orders.js"></script>
+</body>
+
+</html>

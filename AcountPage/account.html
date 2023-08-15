@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>accountpage</title>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="https://kit.fontawesome.com/eed82eddcd.js" crossorigin="anonymous"></script>  
+ 
+    <link rel="stylesheet" href="./account.css">
+</head>
+
+<body>
+    
+    <div class="Container" >
+        <p class="top_p"><span><i class="fa-solid fa-house"></i></span> -- Personal Account <span class="top_span" >--Account edit</span> </p>
+        <h1>ACCOUNT EDIT</h1>
+        <div>
+        <section id="left_sec" >
+            <div class="first_color">
+                <span><i class="fa-regular fa-circle-user"></i></span>
+                <p>PERSONAL INFORMATION</p>
+            </div>
+            <div id="myOrderClick">
+                <span><i class="fa-solid fa-cart-shopping"  ></i></span>
+                <p>MY ORDERS</p>
+            </div>
+            <div class="orenge3" >
+                <span><i class="fa-regular fa-heart" ></i></span>
+                <p>WISH LIST</p>
+            </div>
+            <div id="paymentClick" >
+                <span><i class="fa-regular fa-credit-card" ></i></span>
+                <p>PAYMENT CARDS</p>
+            </div>
+            <div   >
+                <span><i class="fa-light fa-gift" ></i></span>
+                <p>COUPONS</p>
+            </div>
+            <div >
+                <span><i class="fa-regular fa-gear" ></i></span>
+                <p>SERVICE</p>
+            </div>
+            <div  >
+                <span><i class="fa-regular fa-message" ></i></span>
+                <p>FEEDBACK</p>
+            </div>
+        </section>
+
+        <section id="right_sec" >
+            <h1>MAIN PERSONAL INFO</h1>
+         
+            <form id="accountForm">
+            <div>
+                <div class="top_change" >
+                    <p> <span><i class="fa-regular fa-pen-to-square" style="color: #595959;"></i></span> Change</p>
+                    <i class="fa-regular fa-trash-can" color="#050505"></i>
+
+                </div>
+                <div class="input_div">
+                    <div>
+                        <input type="text" placeholder="FirstName"   required>
+                        <input type="text" placeholder="LastName"  required>
+                    </div>
+                    <div>
+                        <input type="date">
+                        <input type="text" placeholder="Email" required >
+                    </div>
+                    <div>
+                        <input type="text" placeholder="mobile number" required>
+                        <div class="gander" >
+                            <button value="Women">
+                                Women
+                            </button>
+                            <button value="Men">
+                                Men
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1>MY DELIVERY ADDRESS</h1>
+            <div>
+                <div  class="top_change">
+                    <p> <span><i class="fa-regular fa-pen-to-square" style="color: #595959;"></i></span> Change</p>
+                    <i class="fa-regular fa-trash-can" color="#050505"></i>
+                </div>
+                <div class="input_div" >
+                    <div>
+                        <input type="text" placeholder="Area" required>
+                        <input type="text" placeholder="Street" required>
+                    </div>
+                    <div>
+
+                        <input type="text" placeholder="House No." required>
+                        <input type="text" placeholder="City" required>
+
+                    </div>
+                </div>
+            </div>
+
+            <h1>MY PASSWORD</h1>
+            <div>
+            <div class="top_change">
+                <p> <span><i class="fa-regular fa-pen-to-square" style="color: #595959;"></i></span> Change</p>
+               
+            </div>
+            <div class="Password_div" >
+                <input type="password" placeholder="password" required>
+                <input type="text" placeholder="confirm password" required>
+            </div>
+            <div id="error-message" class="error-message"></div>
+        </div>
+        <button id="rzp-button1" class="btn btn-outline-dark btn-lg save_btn"><i class="fas fa-money-bill"></i> SAVE ALL CHANGES</button>
+    </form>
+        <!-- <button id="save_btn" ></button> -->
+        </section>
+       
+    </div>
+</div>
+</body>
+ 
+<script src="./account.js">
+    
+   
+  </script>
+ 
+</html>
+
+</html>
