@@ -1,12 +1,12 @@
-import navbar from "./r_navbar/navbar.js"
-import footer from "./r_foooter/footer.js"
+// import navbar from "./r_navbar/navbar.js"
+// import footer from "./r_foooter/footer.js"
 
-var nav = document.querySelector("#navbar")
+// var nav = document.querySelector("#navbar")
 
-nav.innerHTML = navbar();
+// nav.innerHTML = navbar();
 
-var footerContainer = document.querySelector("#footer")
-footerContainer.innerHTML = footer();
+// var footerContainer = document.querySelector("#footer")
+// footerContainer.innerHTML = footer();
 
 let totalpages;
 
@@ -403,9 +403,15 @@ function displayProducts(array) {
                 <button class = "color_btn" style="background-color: ${element.frame_colors[0]};"></button>
                 <p class="product_title">${element.title}</p>
                 <p class="product_price">&#8364 ${element.price}</p>
+                <div style="display: flex; align-items: center; justify-content:space-between">
+                <div>
+                
                 <img class = "wishlist_icon" src="./Images/wishlist icon small.png" alt="Wishlit icon">
                 <img class = "compare_icon" src="./Images/compare icon.png" alt="Compare Icon">
+                </div>
+                <span class = "addToCart"  style="display: inline;">Add to Cart</span>
 
+                </div>
             </div>
         `
 
@@ -413,6 +419,11 @@ function displayProducts(array) {
 
     })
 }
+
+
+// Creating a cart array in local storage
+let cartArr = [ ];
+localStorage.setItem("cartArr" , JSON.stringify(cartArr))
 
 
 

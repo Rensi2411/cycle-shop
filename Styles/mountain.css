@@ -230,7 +230,13 @@ body{
    margin-right: 10px;
    cursor: pointer;
 }
-
+.addToCart{
+    border: 2px solid white;
+    background-color: #FF851B;
+    color: white;
+    padding: 4px;
+    border-radius: 5px;
+}
 
 #paginationButton{
     display: flex;
