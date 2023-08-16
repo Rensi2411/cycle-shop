@@ -1,63 +1,64 @@
-const orderItems = [
+const recomendItems = [
   {
     id:1,
     image:
-      "https://d2f9uwgpmber13.cloudfront.net/public/uploads/mobile/d0afa1adbfd78cdb8f47d6f48c23ea35",
+      "https://www.herocycles.com/dw/image/v2/BGQH_PRD/on/demandware.static/-/Sites-cycles-master/default/dwbd7c3148/Products/Hustle/BSHUS29BL00002/01.png?sh=523&sfrm=png",
     title: "BLACK ARROW 700C 7-SPEED - WHITE ORANGE",
-    price: 20,
+    price: 40,
   },
   {
     id:2,
     image:
-      "https://d2f9uwgpmber13.cloudfront.net/public/uploads/mobile/d0afa1adbfd78cdb8f47d6f48c23ea35",
-    title: "BLACK ARROW 700C 7-SPEED - WHITE ORANGE",
-    price: 20,
+      "https://www.herocycles.com/dw/image/v2/BGQH_PRD/on/demandware.static/-/Sites-cycles-master/default/dw1abd5398/Products/Thorn/BSTHO24BLOR002/02.png?sh=523&sfrm=png",
+    title: "Urban Terrain UT7003S27.5 Denver City Bike with Complete Accessories",
+    price: 60,
   },
   {
     id:3,
     image:
-      "https://d2f9uwgpmber13.cloudfront.net/public/uploads/mobile/d0afa1adbfd78cdb8f47d6f48c23ea35",
-    title: "BLACK ARROW 700C 7-SPEED - WHITE ORANGE",
-    price: 20,
+      "https://www.herocycles.com/dw/image/v2/BGQH_PRD/on/demandware.static/-/Sites-cycles-master/default/dw75396bc5/Products/Voltage/BSVOL24BKGN001/01.png?sh=523&sfrm=png",
+    title: "Leader Spyder 27.5T MTB Cycle/Bike Single Speed with Complete Accessories for Men",
+    price: 30,
   },
   {
     id:4,
     image:
-      "https://d2f9uwgpmber13.cloudfront.net/public/uploads/mobile/d0afa1adbfd78cdb8f47d6f48c23ea35",
-    title: "BLACK ARROW 700C 7-SPEED - WHITE ORANGE",
-    price: 20,
+      "https://www.herocycles.com/dw/image/v2/BGQH_PRD/on/demandware.static/-/Sites-cycles-master/default/dwc7153626/Products/Voltage/BSVOL24OR00002/01.png?sh=523&sfrm=png",
+    title: "Lifelong LLBC2001 Tribe 20T Cycle (Yellow and Black) I Ideal for: Kids (5-8 Years) I Frame Size: 12",
+    price: 75,
   },
   {
     id:5,
     image:
-      "https://d2f9uwgpmber13.cloudfront.net/public/uploads/mobile/d0afa1adbfd78cdb8f47d6f48c23ea35",
-    title: "BLACK ARROW 700C 7-SPEED - WHITE ORANGE",
-    price: 20,
+      "https://www.herocycles.com/dw/image/v2/BGQH_PRD/on/demandware.static/-/Sites-cycles-master/default/dwbd7c3148/Products/Hustle/BSHUS29BL00002/01.png?sh=523&sfrm=png",
+    title: "Leader Scout MTB 26T Mountain Bicycle/Bike Without Gear Single Speed for Men ",
+    price: 43,
   },
   {
     id:6,
     image:
-      "https://d2f9uwgpmber13.cloudfront.net/public/uploads/mobile/d0afa1adbfd78cdb8f47d6f48c23ea35",
-    title: "BLACK ARROW 700C 7-SPEED - WHITE ORANGE",
-    price: 20,
+      "https://www.herocycles.com/dw/image/v2/BGQH_PRD/on/demandware.static/-/Sites-cycles-master/default/dw8da918b5/Products/Gyrfalcon/BSGFL29BKGN001/01.png?sh=523&sfrm=png",
+    title: "Cockatoo Travis Series 26T Mtb Road Bicycle Without Gear Single Speed With Power Brake",
+    price: 54,
   },
   {
     id:7,
     image:
-      "https://d2f9uwgpmber13.cloudfront.net/public/uploads/mobile/d0afa1adbfd78cdb8f47d6f48c23ea35",
-    title: "BLACK ARROW 700C 7-SPEED - WHITE ORANGE",
-    price: 20,
+      "https://www.herocycles.com/dw/image/v2/BGQH_PRD/on/demandware.static/-/Sites-cycles-master/default/dwaf61cac9/Products/Trot/BSTRO26BKBL004/01.png?sh=523&sfrm=png",
+    title: "Hero Spinner 26T Single Speed Cycle | MTB | Grey | Front Suspension ",
+    price: 65,
   },
   {
     id:8,
     image:
-      "https://d2f9uwgpmber13.cloudfront.net/public/uploads/mobile/d0afa1adbfd78cdb8f47d6f48c23ea35",
-    title: "BLACK ARROW 700C 7-SPEED - WHITE ORANGE",
-    price: 20,
+      "https://www.herocycles.com/dw/image/v2/BGQH_PRD/on/demandware.static/-/Sites-cycles-master/default/dwd1165ac1/Products/Voltage/BSVOL20BKGN001/01.png?sh=523&sfrm=png",
+    title: "Lifelong Lady Cycle for Girls/Women 26T with Caliper Brake, Rigid Fork",
+    price:98,
   },
 ];
 let total_amount = 0;
-
+  let orderItems =  JSON.parse(localStorage.getItem("cartArr"))||[];
+ 
 displayOrders(orderItems);
 totalfind();
 function displayOrders(orderItems) {
@@ -69,7 +70,7 @@ function displayOrders(orderItems) {
     let left_div = document.createElement("div");
     left_div.className = "left_div";
     let orderimg = document.createElement("img");
-    orderimg.src = order.image;
+    orderimg.src = order.img;
 
     let details_div = document.createElement("div");
 
@@ -77,7 +78,7 @@ function displayOrders(orderItems) {
     title.textContent = order.title;
 
     let price = document.createElement("p");
-    price.textContent = `$ ${order.price}`;
+    price.textContent = `$ ${order.currentPrice}`;
 
     details_div.append(title, price);
 
@@ -106,8 +107,8 @@ function displayOrders(orderItems) {
     spaninc.addEventListener("click", () => {
       quan++;
       quantitiy_p.textContent = `${Number(quan)}`;
-      totalOrderPrice.textContent = `$ ${quan * order.price}`;
-      total_amount += order.price;
+      totalOrderPrice.textContent = `$ ${quan * order.currentPrice}`;
+      total_amount += order.currentPrice;
       totalfind();
       localStorage.setItem(`quantity_${order.id}`, quan);
     });
@@ -116,19 +117,19 @@ function displayOrders(orderItems) {
       if (quan > 1) {
         quan--;
         quantitiy_p.textContent = `${Number(quan)}`;
-        totalOrderPrice.textContent = `$ ${quan * order.price}`;
-        total_amount -= order.price;
+        totalOrderPrice.textContent = `$ ${quan * order.currentPrice}`;
+        total_amount -= order.currentPrice;
         totalfind();
         localStorage.setItem(`quantity_${order.id}`, quan);
       }
     });
-    total_amount += quan * order.price;
+    total_amount += quan * order.currentPrice;
 
     quantitiy.append(spandec, quantitiy_p, spaninc);
 
     let totalOrderPrice = document.createElement("p");
 
-    totalOrderPrice.textContent = `$ ${quan * order.price}`;
+    totalOrderPrice.textContent = `$ ${quan * order.currentPrice}`;
 
     let DelIcon = document.createElement("i");
     DelIcon.setAttribute("class", "fa-regular fa-trash-can");
@@ -161,7 +162,7 @@ function totalfind() {
   localStorage.setItem("totalAmount",final)
 }
 
-displayrecommend(orderItems);
+displayrecommend(recomendItems);
 
 function displayrecommend(orderItems) {
   orderItems.map((order) => {
