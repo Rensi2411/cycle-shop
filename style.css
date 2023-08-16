@@ -86,7 +86,7 @@
     font-family: "DIN W01 Regular";
     color: rgb(245, 240, 240); 
   }
-  #signInbtn{
+  #signInbtn , #btn{
     width: 100%;
     border-style: solid;
     cursor: pointer;
@@ -140,6 +140,7 @@
    #btn,#signInbtn{
       height: 48px;
       width: 100%;
+
    }
    .checkbox_div {
      display: block;

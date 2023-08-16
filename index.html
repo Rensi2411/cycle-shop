@@ -5,43 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>homepage</title>
     <script src="https://kit.fontawesome.com/0b1bcdd578.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../r_footer/footer.css">
-    <link rel="stylesheet" href="../r_navbar/navbar.css">
-    <link rel="stylesheet" href="homepage.css">
-    <script src="homepage.js"></script>
+    <link rel="stylesheet" href="./r_navbar/navbar.css">
+    <link rel="stylesheet" href="./r_footer/footer.css">
+    
+    <link rel="stylesheet" href="./r_homepage/homepage.css">
+    <script src="./r_homepage/homepage.js"></script>
 </head>
 <body>
     <div id="navbar_import"></div>
     <div id="home">
         <div class="hom-1">
-            <img src="./images/img-1.png" alt="">
+            <img src="./r_homepage/images/img-1.png" alt="">
         </div>
         <div class="hom-2">
             <div class="hom-2a"><h2 class="a">CHOOSE OUR BEST SELLERS</h2></div>
             <div class="hom-2b">
-                <img src="./images/img-8.png" alt="">
-                <img src="./images/img-9.png" alt="">
-                <img src="./images/img-10.png" alt="">
+                <img src="./r_homepage/images/img-8.png" alt="">
+                <img src="./r_homepage/images/img-9.png" alt="">
+                <img src="./r_homepage/images/img-10.png" alt="">
                 <a href=""><button class="btn-a">CATALOGUE</button></a>
             </div>
         </div>
         <div class="hom-3">
             <div class="hom-3a"><h2 class="a">BRAIN TECHNOLOGY</h2></div>
-            <div class="hom-3b"><img src="./images/img-2.png" alt=""></div>
+            <div class="hom-3b"><img src="./r_homepage/images/img-2.png" alt=""></div>
         </div>
         <div class="hom-4">
             <div class="hom-4a"><h2 class="a">BIKES DISCOUNT OF THIS MONTH</h2></div>
                 <div class="hom-4b">
                     <button class="left" onclick="leftScroll()"><i class="arrow left1"></i></button>
-                    <img src="./images/img-3.png" alt="">
-                    <img src="./images/img-4.png" alt="">
-                    <img src="./images/img-5.png" alt="">
-                    <img src="./images/img-3.png" alt="">
-                    <img src="./images/img-4.png" alt="">
-                    <img src="./images/img-5.png" alt="">
-                    <img src="./images/img-3.png" alt="">
-                    <img src="./images/img-4.png" alt="">
-                    <img src="./images/img-5.png" alt="">
+                    <img src="./r_homepage/images/img-3.png" alt="">
+                    <img src="./r_homepage/images/img-4.png" alt="">
+                    <img src="./r_homepage/images/img-5.png" alt="">
+                    <img src="./r_homepage/images/img-3.png" alt="">
+                    <img src="./r_homepage/images/img-4.png" alt="">
+                    <img src="./r_homepage/images/img-5.png" alt="">
+                    <img src="./r_homepage/images/img-3.png" alt="">
+                    <img src="./r_homepage/images/img-4.png" alt="">
+                    <img src="./r_homepage/images/img-5.png" alt="">
                     <button class="right" onclick="rightScroll()"><i class="arrow right1"></i></button>
                 </div>
                 <a href=""><button class="btn-2">CATALOGUE</button></a>
@@ -49,27 +50,27 @@
         </div>
         <div class="hom-5">
             <div class="hom-5a"><h2 class="a">KNOW MORE ABOUT US</h2></div>
-            <div class="hom-5b"><img src="./images/img-6.png" alt=""></div>
+            <div class="hom-5b"><img src="./r_homepage/images/img-6.png" alt=""></div>
         </div>
         <div class="hom-6">
-            <img src="./images/img-7.png" alt="">
+            <img src="./r_homepage/images/img-7.png" alt="">
         </div>
     </div>
 
     <div id="footer_import"></div>
 </body>
     <script type="module">
-        import footer from "../r_footer/footer.js";
+        import footer from "./r_footer/footer.js";
         let footers = document.getElementById("footer_import");
         footers.innerHTML = footer();
 
-        import navbar from "../r_navbar/navbar.js";
+        import navbar from "./r_navbar/navbar.js";
         let navbars = document.getElementById("navbar_import");
         navbars.innerHTML = navbar();
 
         let Namearr = JSON.parse(localStorage.getItem("Specialized_User"));
 
-        document.getElementById("username_text").innerText = "admin";
+        document.getElementById("username_text").innerText = "Admin";
         
 
         function handleLogout() {
@@ -83,7 +84,7 @@
 
         if (Namearr && Namearr.length > 0) {
         // User is logged in
-        let loggedInUser = "admin";
+        let loggedInUser = "Admin";
         document.getElementById("login_text").style.display = "none";
         document.getElementById("username_text").innerText = loggedInUser;
         document.getElementById("username_text").style.display = "inline";
@@ -99,6 +100,9 @@
         document.getElementById("logout_text").style.display = "none";
         }
 
-
+let hom_1Img = document.querySelector(".hom-1>img")
+hom_1Img.addEventListener("click" , function(){
+    window.location.href = "catalogue.html"
+})
     </script>
 </html>

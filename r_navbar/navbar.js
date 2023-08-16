@@ -14,7 +14,7 @@ function navbar (){
           <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
           
           <li>
-            <a href="#" class="desktop-item">MOUNTAIN</a>
+            <a href="mountain.html" class="desktop-item">MOUNTAIN</a>
             <input type="checkbox" id="showMega">
             <label for="showMega" class="mobile-item">MOUNTAIN</label>
             <div class="mega-box">
@@ -141,7 +141,7 @@ function navbar (){
           
         <i class="fa-solid fa-magnifying-glass" style="color: #ffffff; margin: 0px 0px 0px 60px;"></i>
           <input type="search" placeholder="Search" >
-          <a href="../login.html" id="login_text" >Login</a>
+          <a href="login.html" id="login_text" >Login</a>
           <span id="username_text"></span>
           
           <button id="logout_text">Logout</button>

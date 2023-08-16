@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+
+import footer from "../r_footer/footer.js";
+
+
+
+var footerContainer = document.querySelector("#footer")
+footerContainer.innerHTML = footer(); 
+
+=======
+>>>>>>> 2c39aadeaa41d336fd4824b77741dea2f01a9c00
 const recomendItems = [
   {
     id:1,
@@ -139,6 +150,7 @@ function displayOrders(orderItems) {
       const itemIndex = orderItems.indexOf(order);
       console.log(itemIndex, order);
       orderItems.splice(itemIndex, 1);
+      localStorage.setItem("cartArr" , JSON.stringify(orderItems));
       console.log(itemIndex, order);
       total_amount = 0;
       displayOrders(orderItems);

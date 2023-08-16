@@ -1,4 +1,11 @@
  
+import footer from "../r_footer/footer.js";
+
+
+
+var footerContainer = document.querySelector("#footer")
+footerContainer.innerHTML = footer(); 
+
     var options = {
       "key": "rzp_test_Ak3NbcEG8292VY",
       "amount": "1000",

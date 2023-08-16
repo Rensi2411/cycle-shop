@@ -8,10 +8,14 @@
     <script src="https://kit.fontawesome.com/eed82eddcd.js" crossorigin="anonymous"></script>  
     
     <link rel="stylesheet" href="./myorder.css">
+    <link rel="stylesheet" href="../Product Page Componenets/nav.css">
 </head>
 
 <body>
 
+    <div id="navbar">
+        <!-- navbar code -->
+    </div>
     <div class="Container" >
         <p class="top_p"><span><i class="fa-solid fa-house"  ></i></span> -- Personal Account <span class="top_span" >-- My Orders</span> </p>
         <h1>MY ORDER</h1>
@@ -51,7 +55,7 @@
            <button>ALL</button> 
            <button id="progres">IN PROCESS</button>
            <button>COMPLETED</button>
-           <button id="canceledbtn">CANCELED</button> 
+           <button id="canceledbtn">CANCELLED</button> 
         </div>
         <div id="order_details">
             <div>
@@ -84,8 +88,8 @@
             </div>
         </div>
         <div id="cancelCard" class="cancel-card">
-            <p>Your order has been canceled.</p>
-    <p>You will be redirected to the homepage in  <span id="countdown">5</span> seconds...</p>
+            <p>Your order has been cancelled.</p>
+    <p>Your refund will be processed in 5-7 working days. You will be redirected in   <span id="countdown"> </span> seconds... </p>
         </div>
         <button id="save_btn" >CANCEL</button>
          
@@ -93,9 +97,13 @@
        
     </div>
 </div>
+
+<div id="footer">
+    <!-- Footer code -->
+</div>
 </body>
  
-<script src="./myorder.js"></script>
+<script src="./myorder.js" type="module"></script>
  
 </html>
 

@@ -1,5 +1,11 @@
 
-    
+
+import footer from "../r_footer/footer.js";
+
+
+
+var footerContainer = document.querySelector("#footer")
+footerContainer.innerHTML = footer(); 
     const leftSecDivs = document.querySelectorAll('#left_sec div');
     document.querySelector(".first_color").style.color="orange"
     
@@ -22,65 +28,66 @@ document.getElementById("PersonalClick").addEventListener("click",()=>{
  
 
  
-    const orderItems = [
-  {
-    id:1,
-    image:
-      "https://d2f9uwgpmber13.cloudfront.net/public/uploads/mobile/d0afa1adbfd78cdb8f47d6f48c23ea35",
-    title: "BLACK ARROW 700C 7-SPEED - WHITE ORANGE",
-    price: 20,
-  },
-  {
-    id:2,
-    image:
-      "https://d2f9uwgpmber13.cloudfront.net/public/uploads/mobile/d0afa1adbfd78cdb8f47d6f48c23ea35",
-    title: "BLACK ARROW 700C 7-SPEED - WHITE ORANGE",
-    price: 20,
-  },
-  {
-    id:3,
-    image:
-      "https://d2f9uwgpmber13.cloudfront.net/public/uploads/mobile/d0afa1adbfd78cdb8f47d6f48c23ea35",
-    title: "BLACK ARROW 700C 7-SPEED - WHITE ORANGE",
-    price: 20,
-  },
-  {
-    id:4,
-    image:
-      "https://d2f9uwgpmber13.cloudfront.net/public/uploads/mobile/d0afa1adbfd78cdb8f47d6f48c23ea35",
-    title: "BLACK ARROW 700C 7-SPEED - WHITE ORANGE",
-    price: 20,
-  },
-  {
-    id:5,
-    image:
-      "https://d2f9uwgpmber13.cloudfront.net/public/uploads/mobile/d0afa1adbfd78cdb8f47d6f48c23ea35",
-    title: "BLACK ARROW 700C 7-SPEED - WHITE ORANGE",
-    price: 20,
-  },
-  {
-    id:6,
-    image:
-      "https://d2f9uwgpmber13.cloudfront.net/public/uploads/mobile/d0afa1adbfd78cdb8f47d6f48c23ea35",
-    title: "BLACK ARROW 700C 7-SPEED - WHITE ORANGE",
-    price: 20,
-  },
-  {
-    id:7,
-    image:
-      "https://d2f9uwgpmber13.cloudfront.net/public/uploads/mobile/d0afa1adbfd78cdb8f47d6f48c23ea35",
-    title: "BLACK ARROW 700C 7-SPEED - WHITE ORANGE",
-    price: 20,
-  },
-  {
-    id:8,
-    image:
-      "https://d2f9uwgpmber13.cloudfront.net/public/uploads/mobile/d0afa1adbfd78cdb8f47d6f48c23ea35",
-    title: "BLACK ARROW 700C 7-SPEED - WHITE ORANGE",
-    price: 20,
-  },
-];
+//     const orderItems = [
+//   {
+//     id:1,
+//     image:
+//       "https://d2f9uwgpmber13.cloudfront.net/public/uploads/mobile/d0afa1adbfd78cdb8f47d6f48c23ea35",
+//     title: "BLACK ARROW 700C 7-SPEED - WHITE ORANGE",
+//     price: 20,
+//   },
+//   {
+//     id:2,
+//     image:
+//       "https://d2f9uwgpmber13.cloudfront.net/public/uploads/mobile/d0afa1adbfd78cdb8f47d6f48c23ea35",
+//     title: "BLACK ARROW 700C 7-SPEED - WHITE ORANGE",
+//     price: 20,
+//   },
+//   {
+//     id:3,
+//     image:
+//       "https://d2f9uwgpmber13.cloudfront.net/public/uploads/mobile/d0afa1adbfd78cdb8f47d6f48c23ea35",
+//     title: "BLACK ARROW 700C 7-SPEED - WHITE ORANGE",
+//     price: 20,
+//   },
+//   {
+//     id:4,
+//     image:
+//       "https://d2f9uwgpmber13.cloudfront.net/public/uploads/mobile/d0afa1adbfd78cdb8f47d6f48c23ea35",
+//     title: "BLACK ARROW 700C 7-SPEED - WHITE ORANGE",
+//     price: 20,
+//   },
+//   {
+//     id:5,
+//     image:
+//       "https://d2f9uwgpmber13.cloudfront.net/public/uploads/mobile/d0afa1adbfd78cdb8f47d6f48c23ea35",
+//     title: "BLACK ARROW 700C 7-SPEED - WHITE ORANGE",
+//     price: 20,
+//   },
+//   {
+//     id:6,
+//     image:
+//       "https://d2f9uwgpmber13.cloudfront.net/public/uploads/mobile/d0afa1adbfd78cdb8f47d6f48c23ea35",
+//     title: "BLACK ARROW 700C 7-SPEED - WHITE ORANGE",
+//     price: 20,
+//   },
+//   {
+//     id:7,
+//     image:
+//       "https://d2f9uwgpmber13.cloudfront.net/public/uploads/mobile/d0afa1adbfd78cdb8f47d6f48c23ea35",
+//     title: "BLACK ARROW 700C 7-SPEED - WHITE ORANGE",
+//     price: 20,
+//   },
+//   {
+//     id:8,
+//     image:
+//       "https://d2f9uwgpmber13.cloudfront.net/public/uploads/mobile/d0afa1adbfd78cdb8f47d6f48c23ea35",
+//     title: "BLACK ARROW 700C 7-SPEED - WHITE ORANGE",
+//     price: 20,
+//   },
+// ];
 
+let orderItems =  JSON.parse(localStorage.getItem("cartArr"))||[];
 document.getElementById("total_items").textContent = orderItems.length
 document.getElementById("order_id").textContent =Math.floor(Math.random()*100000)
 
@@ -97,7 +104,7 @@ function displayOrderItems(orderItems){
     let left_div = document.createElement("div");
     left_div.className = "left_div";
     let orderimg = document.createElement("img");
-    orderimg.src = order.image;
+    orderimg.src = order.img;
     left_div.append(orderimg);
 
     let details_div = document.createElement("div");
@@ -110,7 +117,7 @@ function displayOrderItems(orderItems){
    quantity.textContent = `${quan} pc`
 
     let price = document.createElement("p");
-    price.textContent = `$ ${quan*order.price}`;
+    price.textContent = `$ ${quan*order.currentPrice}`;
     
 
     details_div.append(title,quantity, price);
@@ -147,7 +154,7 @@ document.getElementById("save_btn").addEventListener("click", function() {
   
     const countdownInterval = setInterval(function() {
         countdown--;
-        countdownElement.textContent = countdown;
+        countdownElement.textContent = `${countdown}` +" ";
 
         if (countdown <= 0) {
             clearInterval(countdownInterval);

@@ -49,7 +49,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebas
         displayAlert(successmsg)
         //console.log()
         setTimeout(() => {
-          window.location.href="./r_homepage/index.html";
+          window.location.href="index.html";
         }, 1000);
 
       })

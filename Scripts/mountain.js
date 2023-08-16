@@ -1,12 +1,12 @@
-// import navbar from "./r_navbar/navbar.js"
-// import footer from "./r_foooter/footer.js"
+import footer from "../r_footer/footer.js";
 
-// var nav = document.querySelector("#navbar")
 
-// nav.innerHTML = navbar();
 
-// var footerContainer = document.querySelector("#footer")
-// footerContainer.innerHTML = footer();
+
+
+
+var footerContainer = document.querySelector("#footer")
+footerContainer.innerHTML = footer();
 
 let totalpages;
 
@@ -422,8 +422,8 @@ function displayProducts(array) {
 
 
 // Creating a cart array in local storage
-let cartArr = [ ];
-localStorage.setItem("cartArr" , JSON.stringify(cartArr))
+let cartArr = [];
+localStorage.setItem("cartArr", JSON.stringify(cartArr))
 
 
 
@@ -510,13 +510,11 @@ function getProduct() {
     var product_sub_box = document.querySelectorAll(".product_sub_box");
 
     // console.log(product_sub_box);
-    product_sub_box.forEach(function (element, index) {
-        if (index > 2) {
-            index = index / 2;
-        }
+    product_sub_box.forEach(function (element) {
+        
         element.addEventListener("click", () => {
 
-            window.location.href = `./product${index + 1}.html`
+            window.location.href = `./product1.html`
 
         })
     })
