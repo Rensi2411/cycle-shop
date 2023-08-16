@@ -1,13 +1,13 @@
 ## Online Cycle Shop
 
-  This is a E-Commerce store selling different kind of Cycles.
-It's created by team of four members.
+  This is an E-Commerce store selling different kinds of Cycles.
+It was created by a team of four members.
 
 ## Features
 
-- To be able to signin and create an account
-- Interacting with products coming in from the json-server
-- Able to buy different kind of Cycle complete Payment with Razorpay Gateway Integration
+- Able to sign in and create an account
+- Interacting with products coming in from the JSON-server
+- Able to buy different kinds of Cycle complete Payments with Razorpay Gateway Integration
 
  ## Tech Stack
 
